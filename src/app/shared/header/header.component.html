@@ -1,28 +1,24 @@
-<header>
-  <div class="name">
-    <!-- name -->
-    <p>Jona<span>s</span></p>
+<div class="name">
+  <p>Jona<span>s</span></p>
+</div>
+<nav>
+  <div class="menu">
+    <a href="#about-me">About me</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
   </div>
-  <nav>
-    <div class="menu">
-      <!-- menu links -->
-      <a href="#about-me">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-    </div>
-    <div class="languageBtn">
-      <button
-        [class.active]="activeLanguage === 'DE'"
-        (click)="setLanguage('DE')"
-      >
-        DE
-      </button>
-      <button
-        [class.active]="activeLanguage === 'EN'"
-        (click)="setLanguage('EN')"
-      >
-        EN
-      </button>
-    </div>
-  </nav>
-</header>
+  <div class="languageBtn">
+    <button
+      [class.active]="activeLanguage === 'DE'"
+      (click)="setLanguage('DE')"
+    >
+      DE
+    </button>
+    <button
+      [class.active]="activeLanguage === 'EN'"
+      (click)="setLanguage('EN')"
+    >
+      EN
+    </button>
+  </div>
+</nav>

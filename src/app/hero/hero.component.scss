@@ -1,0 +1,91 @@
+.hero-content{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 297px;
+    left: 50%;                   // Um es mittig auszurichten
+    transform: translateX(-50%); // zentriert es horizontal
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    }
+
+.i-am {
+    font-size: 90px;
+    font-weight: 400;
+    display: inline-block;
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 100px;
+    margin-left: -80px;
+
+  
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    width: 930px;
+    height: 150px;
+    font-size: 128px;
+    font-weight: 700;
+
+}
+
+.title {
+    width: auto;
+    font-size: 64px;
+    font-weight: 400;
+    color: #9747FF;
+}
+
+button {
+    position: absolute;
+    top: 593px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 165px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #70E61C;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.socials {
+    position: absolute;
+    top: 867px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.stroke-hero {
+    width: 100px;
+    height: 4px;
+    background-color: #70E61C;
+}
+
+.scroll {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 800px;
+    right: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 23px;
+    font-weight: 400;
+    width: 160px;
+    img {
+        transform: rotate(-90deg);
+    }
+}
