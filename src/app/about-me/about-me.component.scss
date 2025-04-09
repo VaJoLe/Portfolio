@@ -1,0 +1,36 @@
+h2 {
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+    line-height: 120px;
+}
+
+p {
+    color: white;
+}
+
+.left {
+    width: 550px;
+}
+
+.leftBottom {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    }
+}
+
+.shadow-pic {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 700px;
+    height: 620px;
+    z-index: -1;
+}
