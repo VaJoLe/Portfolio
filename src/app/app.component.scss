@@ -43,3 +43,22 @@ app-about-me {
     position: relative;
     z-index: 1;
 }
+
+app-skills {
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1;
+}
+
+.vector {
+    position: absolute;
+        top: 1600px;
+        width: 100%;
+        max-width: 1440px;
+        z-index: 0;
+}
