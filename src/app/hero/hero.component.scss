@@ -3,8 +3,8 @@
     height: auto;
     position: absolute;
     top: 297px;
-    left: 50%;                   // Um es mittig auszurichten
-    transform: translateX(-50%); // zentriert es horizontal
+    left: 50%;
+    transform: translateX(-50%); 
     color: white;
     font-size: 30px;
     display: flex;
@@ -20,18 +20,17 @@
     width: 200px;
     height: 100px;
     margin-left: -80px;
-
-  
+    overflow-y: hidden;  
 }
 
 .name {
     display: flex;
     align-items: center;
     width: 930px;
-    height: 150px;
+    line-height: 150px;
     font-size: 128px;
     font-weight: 700;
-
+    overflow-y: hidden;
 }
 
 .title {
@@ -54,6 +53,13 @@ button {
     background-color: #70E61C;
     font-size: 23px;
     font-weight: 400;
+    transition: all 75ms ease-in-out;
+    &:hover {
+        width: 180px;
+        height: 73px;
+        background-color: #9747FF;
+        transition: all 75ms ease-in-out;
+    }
 }
 
 .socials {

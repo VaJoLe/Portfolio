@@ -1,0 +1,95 @@
+.skillsIcons {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-left: 100px;
+       
+}
+
+.skillIconBox{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    img {
+        height: 60px;
+        object-fit: cover;
+        transition: all 1.25s ease-in;
+        &:hover {
+            animation: jumpUp 1.25s ease-out;
+        }
+    }
+    p {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@keyframes jumpUp {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.skillsText {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    h2 {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 120px;
+        overflow-y: hidden;
+
+    }
+    button {
+        width: 200px;
+        height: 58px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        background-color: #70E61C;
+        font-size: 23px;
+        font-weight: 400;
+        &:hover {
+            width: 215px;
+            height: 63px;
+            background-color: #9747FF;
+            transition: all 75ms ease-in-out;
+        }
+    }
+}
+
+.skillsTextTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 120px;
+}
+
+.strokeSkills {
+    width: 287px;
+    height: 4px;
+    background-color: #1CDAE6;
+}
+
+.skillsTextContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 100px;
+}

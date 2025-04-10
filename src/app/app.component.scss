@@ -31,11 +31,10 @@ app-hero{
 }
 
 
-
 app-about-me {
     width: 100%;
     max-width: 1440px;
-    height: auto;
+    height: 770px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,10 +46,11 @@ app-about-me {
 app-skills {
     width: 100%;
     max-width: 1440px;
-    height: 100vh;
+    height: auto;
+    padding: 100px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     position: relative; 
     z-index: 1;
 }
