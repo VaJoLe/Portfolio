@@ -1,6 +1,7 @@
 .bg {
     background-color: #141D2F;
-    @media (min-width: 1440px) {
+    position: relative;
+    @media (min-width: 1441px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,6 +24,7 @@ app-hero{
     width: 100%;
     max-width: 1440px;
     height: 100vh;
+    max-height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,4 +63,17 @@ app-skills {
         width: 100%;
         max-width: 1440px;
         z-index: 0;
+}
+
+app-portfolio {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 1;
+    color: white;
 }

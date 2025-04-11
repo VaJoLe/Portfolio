@@ -1,1 +1,24 @@
-<p id="portfolio">portfolio works!</p>
+<div>
+  <div class="strokeLeft"></div>
+  <h2 class="">Portfolio</h2>
+  <div class="strokeRight"></div>
+</div>
+<div>
+  <p class="">
+    Explore a selection of my work here - Interact with projects to see my
+    skills in action.
+  </p>
+</div>
+
+<div *ngFor="let project of projects; let i = index">
+  <app-project
+    [title]="project.title"
+    [techStack]="project.techStack"
+    [description]="project.description"
+    [liveUrl]="project.liveUrl"
+    [githubUrl]="project.githubUrl"
+    [imageUrl]="project.imageUrl"
+    [reversed]="i % 2 !== 0"
+  >
+  </app-project>
+</div>
