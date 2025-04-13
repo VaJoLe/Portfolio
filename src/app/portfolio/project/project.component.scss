@@ -1,11 +1,9 @@
 .portfolio-card {
-    margin: 2rem 0;
-  
     .content-wrapper {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 2rem;
+      gap: 32px;
   
       @media (max-width: 768px) {
         flex-direction: column;
@@ -20,11 +18,19 @@
           flex-direction: column;
         }
       }
-    }
+      .project-text {
+        text-align: right;
   
+        .buttons {
+          justify-content: flex-end;
+        }
+      }
+    }
+
     .project-image {
-      width: 45%;
-      border-radius: 12px;
+      width: 620px;
+      height: 340px;
+      padding: 60px 110px;
       object-fit: cover;
   
       @media (max-width: 768px) {
@@ -33,31 +39,36 @@
     }
   
     .project-text {
-      flex: 1;
-  
+      flex : 1;
       .title {
         color: #673ab7;
-        margin-bottom: 0.5rem;
+        margin-bottom: 8px;
+        font-size: 32px;
+        font-weight: 700;
       }
   
       .stack {
         color: #4caf50;
-        font-weight: 600;
+        font-size: 23px;
+        font-weight: 400;
       }
   
       .desc {
-        margin: 1rem 0;
+        margin: 16px 0;
+        font-size: 16px;
+        font-weight: 400;
       }
   
       .buttons {
         display: flex;
-        gap: 1rem;
-  
+        gap: 86px;
+            transition: 75ms;
         a {
           text-decoration: none;
-          padding: 0.5rem 1rem;
-          border-radius: 6px;
-          font-weight: bold;
+          padding: 15px 30px;
+          border-radius: 10px;
+          font-size: 23px;
+          font-weight: 400;
   
           &:first-child {
             background: #673ab7;
@@ -65,16 +76,15 @@
           }
   
           &:last-child {
-            border: 2px solid #4caf50;
-            color: #4caf50;
-  
-            &:hover {
-              background: #4caf50;
-              color: white;
-            }
+            border: 1px solid #70E61C;
+            color: #70E61C;
+          }
+          &:hover {
+            transition: 75ms;
+            background: #70E61C;
+            color: white;
           }
         }
       }
     }
   }
-  

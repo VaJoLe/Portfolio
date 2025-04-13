@@ -1,9 +1,39 @@
 app-project {
     padding: 0 100px;
-    width: 800px;
+    width: 100%;
     max-width: 1440px;
     display: flex;
-    // justify-content: space-between;
     align-items: center;
-    gap: 35px;
+    justify-content: space-between;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 20px;
+    h2 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+    .strokeLeft {
+        width: 100px;
+        height: 4px;
+        background-color: #9747FF;
+    }
+    .strokeRight {
+        width: 507px;
+        height: 4px;
+        background-color: #9747FF;
+    }
+}
+
+.portfolio-intro {
+    display: flex;
+    justify-content: center;
+    p {
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
