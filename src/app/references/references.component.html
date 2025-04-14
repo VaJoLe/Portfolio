@@ -1,1 +1,44 @@
-<p>references works!</p>
+<div class="reference-wrapper">
+  <img src="/assets/icons/quote.png" alt="Quote" class="quote-icon" />
+  <div class="quote-box">
+    <p class="quote">“{{ references[currentIndex].quote }}”</p>
+    <div class="author-box">
+      <div class="quoteStroke"></div>
+      <p class="author">{{ references[currentIndex].author }}</p>
+    </div>
+  </div>
+  <div class="imgBox">
+    <img
+      [src]="references[currentIndex].image"
+      alt="Portrait"
+      class="author-image"
+    />
+    <div class="authorStroke"></div>
+  </div>
+</div>
+
+<div class="controls">
+  <img
+    src="assets/icons/arrow_back.png"
+    class="arrow"
+    (click)="prev()"
+    alt="Previous"
+  />
+
+  <div class="dots">
+    <span
+      *ngFor="let t of references; let i = index"
+      class="dot"
+      [class.active]="i === currentIndex"
+      (click)="goTo(i)"
+    >
+    </span>
+  </div>
+
+  <img
+    src="assets/icons/arrow_forward.png"
+    class="arrow"
+    (click)="next()"
+    alt="Next"
+  />
+</div>

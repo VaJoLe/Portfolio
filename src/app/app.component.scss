@@ -69,8 +69,17 @@ app-portfolio {
     width: 100%;
     max-width: 1440px;
     height: auto;
-   
     position: relative; 
     z-index: 1;
     color: white;
+}
+
+app-references {
+    display: inline-block;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    padding-left: 100px;
+    margin-top: 50px;
+    z-index: 1;
 }
