@@ -37,7 +37,7 @@
     width: auto;
     font-size: 64px;
     font-weight: 400;
-    color: #9747FF;
+    color: #00BEE8;
 }
 
 button {
@@ -98,18 +98,18 @@ button {
 
 .shadow-top-left {
     position: absolute;
-    top: 200px;
-    left: -180px;
-    width: 600px;
-    height: 630px;
+    top: 120px;
+    left: -250px;
+    width: 700px;
+    height: 730px;
     z-index: -1;
 }
 
 .shadow-top-right {
     position: absolute;
-    top: 70px;
-    right: -350px;
-    width: 600px;
-    height: 700px;
+    top: 20px;
+    right: -400px;
+    width: 700px;
+    height: 800px;
     z-index: -1;
 }

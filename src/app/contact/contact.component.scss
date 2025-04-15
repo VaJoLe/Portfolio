@@ -1,0 +1,170 @@
+.contact-head {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  .contact-stroke {
+    width: 535px;
+    height: 4px;
+    background-color: #70E61C;
+  }
+  h2 {
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+  }
+}
+
+.contact-content {
+  padding-left: 100px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .left {
+    width: 474px;
+
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: white;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      margin-top: 16px;
+    }
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 600px;
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      appearance: none;
+      background-color: transparent;
+      border: 2px solid #9146ff;
+      padding: 1rem;
+      color: white;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: #00e5ff;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      color: white;
+
+      input[type="checkbox"] {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #70e61c;
+        border-radius: 2px;
+        background-color: transparent;
+        cursor: pointer;
+
+        position: relative;
+        transition: all 0.2s ease;
+
+        &:checked {
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &::after {
+            content: "✔";
+            font-size: 14px;
+            color: #70e61c;
+          }
+        }
+      }
+
+      label {
+        line-height: 1.4;
+        font-size: 14px;
+        font-weight: 400;
+
+        a {
+          color: #9747ff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    button {
+      width: 253px;
+      height: 58px;
+      font-size: 23px;
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #b6b6b6;
+      border: none;
+      border-radius: 8px;
+      cursor: not-allowed;
+      transition: background-color 0.3s;
+
+      &:enabled {
+        background-color: #9146ff;
+        cursor: pointer;
+      }
+
+      &:hover:enabled {
+        background-color: #7c32e3;
+      }
+    }
+  }
+}
+
+.goUp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 70px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 24px;
+  }
+}
+
+.shadow-contact {
+    position: absolute;
+    bottom: -450px;
+    left: -500px;
+    z-index: -1;
+}

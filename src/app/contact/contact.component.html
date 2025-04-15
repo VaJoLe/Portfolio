@@ -1,1 +1,81 @@
-<p>contact works!</p>
+<div class="contact-head">
+  <div class="contact-stroke"></div>
+  <h2>Contact</h2>
+</div>
+
+<div class="contact-content">
+  <div class="left">
+    <h3>Got a problem to solve?</h3>
+    <p>
+      Feel free to reach out! I’m looking for a front-end role where I can bring
+      clean code, fresh ideas, and real value to your projects.
+    </p>
+    <p>Need a Frontend developer? <span>Contact me!</span></p>
+  </div>
+  <div class="right">
+    <form
+      class="contact-form"
+      (ngSubmit)="onSubmit(contactForm)"
+      #contactForm="ngForm"
+      autocomplete="off"
+    >
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Your name"
+        [(ngModel)]="contactData.name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email"
+        [(ngModel)]="contactData.email"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Your message"
+        #message="ngModel"
+        [(ngModel)]="contactData.message"
+        rows="6"
+        required
+      ></textarea>
+      <!-- @if (!message.valid && message.touched) {
+      <div class="error-message">
+        Please enter a valid message.
+      </div>
+    } 
+    Fehlernachrichtung  
+    -->
+      <div class="checkbox-row">
+        <input
+          type="checkbox"
+          id="privacy"
+          name="privacy"
+          [(ngModel)]="contactData.privacyAccepted"
+          required
+        />
+        <label for="privacy">
+          I've read the
+          <a href="/privacy-policy" target="_blank">privacy policy</a> and agree
+          to the processing of my data as outlined.
+        </label>
+      </div>
+      <div class="button">
+          <button type="submit" [disabled]="!contactForm.valid">
+            Send message
+          </button>
+      </div>
+    </form>
+  </div>
+
+  <a class="goUp" href="#start"><img src="/assets/icons/arrow-goUp.png" alt="Go to hero section"></a>
+</div>
+<img class="shadow-contact" src="/assets/shadows/shadow-contact.svg" alt="">

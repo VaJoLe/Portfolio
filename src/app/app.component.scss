@@ -1,85 +1,116 @@
 .bg {
-    background-color: #141D2F;
-    position: relative;
-    @media (min-width: 1441px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  background-color: #141d2f;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 1441px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 app-header {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 37px 100px;
-    height: 110px;
-    width: 100%;
-    max-width: 1440px;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 37px 100px;
+  height: 110px;
+  width: 100%;
+  max-width: 1440px;
+  z-index: 100;
 }
 
-app-hero{
-    width: 100%;
-    max-width: 1440px;
-    height: 100vh;
-    max-height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
-    z-index: 1;
+app-hero {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
-
 
 app-about-me {
-    width: 100%;
-    max-width: 1440px;
-    height: 770px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-    position: relative;
-    z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+  height: 770px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 app-skills {
-    width: 100%;
-    max-width: 1440px;
-    height: auto;
-    padding: 100px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; 
-    z-index: 1;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
+
+
 .vector {
-    position: absolute;
-        top: 1600px;
-        width: 100%;
-        max-width: 1440px;
-        z-index: 0;
+  position: absolute;
+  top: 1600px;
+  width: 100%;
+  max-width: 1440px;
+  z-index: 1;
 }
 
 app-portfolio {
-    width: 100%;
-    max-width: 1440px;
-    height: auto;
-    position: relative; 
-    z-index: 1;
-    color: white;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  overflow: hidden;
 }
 
 app-references {
-    display: inline-block;
-    width: 100%;
-    max-width: 1440px;
-    height: auto;
-    padding-left: 100px;
-    margin-top: 50px;
-    z-index: 1;
+  display: inline-block;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  padding-left: 100px;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+app-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  padding: 150px 100px 150px 0;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+app-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px;
+  height: 270px;
+  width: 100%;
+  max-width: 1440px;
+  z-index: 100;
+  border-top: 4px solid #70e61c;
+  background-color: #141d2f;
 }

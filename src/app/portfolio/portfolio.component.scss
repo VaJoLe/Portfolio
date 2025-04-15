@@ -5,12 +5,12 @@ app-project {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .portfolio{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 32px;
     margin-bottom: 20px;
@@ -18,12 +18,12 @@ app-project {
         font-size: 90px;
         font-weight: 700;
     }
-    .strokeLeft {
+    .strokeRight {
         width: 100px;
         height: 4px;
         background-color: #9747FF;
     }
-    .strokeRight {
+    .strokeLeft {
         width: 507px;
         height: 4px;
         background-color: #9747FF;
@@ -38,3 +38,22 @@ app-project {
         font-weight: 400;
     }
 }
+
+.shadow-pf {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: -250px;
+    z-index: -1;
+    width: 700px;
+    height: 700px;
+}
+
+.shadow-skills {
+    position: absolute;
+    top: -20px;
+    right: -320px;
+    z-index: -1;
+    width: 700px;
+    height: 700px;
+  }
