@@ -22,6 +22,8 @@ export class ContactComponent {
 
   mailTest = true;
 
+  successMessageVisible = false;
+
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -39,15 +41,21 @@ export class ContactComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            ngForm.resetForm();
-          },
+            this.successMessageVisible = true;
+            setTimeout(() => {
+              this.successMessageVisible = false;
+              ngForm.resetForm();
+            }, 5000);          },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
-    }
+      this.successMessageVisible = true;
+      setTimeout(() => {
+        this.successMessageVisible = false;
+        ngForm.resetForm(); 
+      }, 5000);    }
   }
 }

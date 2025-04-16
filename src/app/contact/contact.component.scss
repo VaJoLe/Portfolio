@@ -180,6 +180,36 @@
     font-size: 0.9rem;
     margin-top: 4px;
   }
+
+  .success-popup {
+    background-color: #00c896;
+    color: white;
+    padding: 12px 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    animation: fadeInOut 5s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
 }
 
 .goUp {
