@@ -4,13 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h3 {
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0;
+  a {
+    text-decoration: none;
+    h3 {
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+    }
     span {
-      color: #70e61c;
+      color: #4b47ff;
     }
   }
   p {
@@ -19,14 +21,37 @@
     font-weight: 400;
   }
   .socials {
+    width: 160px;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s ease;
+        &:hover {
+          width: 40px;
+          height: auto;
+        }
+      }
+    }
   }
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+
+  &:hover {
+    color: #1ce6b6;
+    text-decoration: underline;
+  }
 }

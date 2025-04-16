@@ -5,7 +5,7 @@
   .contact-stroke {
     width: 535px;
     height: 4px;
-    background-color: #70E61C;
+    background-color: #4b47ff;
   }
   h2 {
     font-size: 90px;
@@ -45,8 +45,9 @@
     input[type="email"],
     textarea {
       appearance: none;
+      width: 100%;
       background-color: transparent;
-      border: 2px solid #9146ff;
+      border: 2px solid #00bee8;
       padding: 1rem;
       color: white;
       border-radius: 8px;
@@ -55,8 +56,12 @@
       outline: none;
       transition: border-color 0.3s;
 
+      &:hover {
+        border-color: #4b47ff;
+      }
+
       &:focus {
-        border-color: #00e5ff;
+        border-color: #4b47ff;
       }
     }
 
@@ -74,7 +79,7 @@
         appearance: none;
         width: 18px;
         height: 18px;
-        border: 2px solid #70e61c;
+        border: 2px solid #4b47ff;
         border-radius: 2px;
         background-color: transparent;
         cursor: pointer;
@@ -91,7 +96,7 @@
           &::after {
             content: "✔";
             font-size: 14px;
-            color: #70e61c;
+            color: #4b47ff;
           }
         }
       }
@@ -102,7 +107,7 @@
         font-weight: 400;
 
         a {
-          color: #9747ff;
+          color: #1ce6b6;
           text-decoration: none;
 
           &:hover {
@@ -135,14 +140,45 @@
       transition: background-color 0.3s;
 
       &:enabled {
-        background-color: #9146ff;
+        background-color: #1ce6b6;
         cursor: pointer;
       }
 
       &:hover:enabled {
-        background-color: #7c32e3;
+        background-color: #1ce6b6;
       }
     }
+  }
+
+  input[type="text"].ng-invalid.ng-dirty,
+  input[type="email"].ng-invalid.ng-dirty,
+  textarea.ng-invalid.ng-dirty {
+    border: 2px solid #ff416c;
+  }
+
+  /* Fehler: Rot bleibt auch bei Fokus */
+  input[type="text"].ng-invalid.ng-dirty:focus,
+  input[type="email"].ng-invalid.ng-dirty:focus,
+  textarea.ng-invalid.ng-dirty:focus {
+    border: 2px solid #ff416c !important;
+    box-shadow: none;
+  }
+
+  /* Erfolgreich validiert: Grün */
+  input[type="text"].ng-valid.ng-dirty,
+  input[type="email"].ng-valid.ng-dirty,
+  textarea.ng-valid.ng-dirty {
+    border: 2px solid #00c896;
+  }
+  input[type="text"].ng-valid.ng-dirty:focus,
+  input[type="email"].ng-valid.ng-dirty:focus,
+  textarea.ng-valid.ng-dirty:focus {
+    border: 2px solid #00c896;
+  }
+  .error-message {
+    color: #ff416c;
+    font-size: 0.9rem;
+    margin-top: 4px;
   }
 }
 
@@ -163,8 +199,8 @@
 }
 
 .shadow-contact {
-    position: absolute;
-    bottom: -450px;
-    left: -500px;
-    z-index: -1;
+  position: absolute;
+  bottom: -450px;
+  left: -500px;
+  z-index: -1;
 }

@@ -13,6 +13,7 @@
     width: 97px;
     height: 68px;
     z-index: 2;
+    filter: brightness(0) saturate(100%) invert(24%) sepia(78%) saturate(5525%) hue-rotate(241deg) brightness(103%) contrast(99%);
   }
 
   .quote-box {
@@ -21,10 +22,11 @@
     justify-content: space-between;
     position: relative;
     width: 850px;
-    height: 272px;
+    height: auto;
+    min-height: 272px;
     padding: 48px 96px;
     color: white;
-    border: 4px solid #9146ff;
+    border: 4px solid #1CE6B6;
     border-radius: 32px;
 
     .quote {
@@ -36,7 +38,7 @@
     .quoteStroke {
       flex: 1;
       height: 2px;
-      background-color: #1cdae6;
+      background-color: #1CE6B6;
       border-radius: 32px;
     }
 
@@ -59,7 +61,7 @@
     flex-direction: row;
     .author-image {
       border-radius: 50%;
-      border: 3px solid #00ff66;
+      border: 3px solid #4B47FF;
 
       height: 100%;
       object-fit: cover;
@@ -68,7 +70,7 @@
     .authorStroke {
       width: 104px;
       height: 4px;
-      background-color: #00ff66;
+      background-color: #4B47FF;
     }
   }
 }
@@ -78,16 +80,20 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
 
   .arrow {
     width: 32px;
     height: 32px;
     cursor: pointer;
-    filter: brightness(1.2);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(93%) saturate(965%) hue-rotate(146deg) brightness(89%) contrast(105%);
     transition: transform 0.2s ease;
+    border-radius: 50%;
+    border: 2px solid transparent;
 
     &:hover {
-      transform: scale(1.2);
+    border-color: #1CE6B6;
+
     }
   }
 
@@ -99,13 +105,21 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: #70e61c;
+      background-color: #4B47FF;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &.active {
-        background-color: #1cdae6;
+        background-color: #1CE6B6;
       }
     }
   }
+}
+
+.shadow-ref {
+  position: absolute;
+  top: -70px;
+  right: -450px;
+  z-index: -1;
+  transform: rotate(251deg);
 }

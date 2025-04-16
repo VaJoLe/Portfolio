@@ -1,3 +1,5 @@
+<div id="contact" style="position: absolute; top: -100px"></div>
+
 <div class="contact-head">
   <div class="contact-stroke"></div>
   <h2>Contact</h2>
@@ -19,41 +21,52 @@
       #contactForm="ngForm"
       autocomplete="off"
     >
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Your name"
-        [(ngModel)]="contactData.name"
-        required
-      />
-
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Your email"
-        [(ngModel)]="contactData.email"
-        required
-        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-      />
-
-      <textarea
-        name="message"
-        id="message"
-        placeholder="Your message"
-        #message="ngModel"
-        [(ngModel)]="contactData.message"
-        rows="6"
-        required
-      ></textarea>
-      <!-- @if (!message.valid && message.touched) {
-      <div class="error-message">
-        Please enter a valid message.
+      <div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          #name="ngModel"
+          placeholder="Your name"
+          [(ngModel)]="contactData.name"
+          required
+          pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄäÖöÜüß\-'\s]{2,50}$"
+        />
+        @if (!name.valid && name.touched) {
+        <div class="error-message">Your name is required.</div>
+        }
       </div>
-    } 
-    Fehlernachrichtung  
-    -->
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          #email="ngModel"
+          placeholder="Your email"
+          [(ngModel)]="contactData.email"
+          required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        />
+        @if (!email.valid && email.touched) {
+        <div class="error-message">Your email is required.</div>
+        }
+      </div>
+      <div>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your message"
+          #message="ngModel"
+          [(ngModel)]="contactData.message"
+          rows="6"
+          required
+          minlength="5"
+
+        ></textarea>
+        @if (!message.valid && message.touched) {
+        <div class="error-message">Your message is required.</div>
+        }
+      </div>
       <div class="checkbox-row">
         <input
           type="checkbox"
@@ -61,6 +74,7 @@
           name="privacy"
           [(ngModel)]="contactData.privacyAccepted"
           required
+          #privacy="ngModel"
         />
         <label for="privacy">
           I've read the
@@ -68,14 +82,19 @@
           to the processing of my data as outlined.
         </label>
       </div>
+      @if (!privacy.valid && privacy.touched) {
+      <div class="error-message">Please accept the privacy policy.</div>
+      }
       <div class="button">
-          <button type="submit" [disabled]="!contactForm.valid">
-            Send message
-          </button>
+        <button type="submit" [disabled]="!contactForm.valid">
+          Send message
+        </button>
       </div>
     </form>
   </div>
 
-  <a class="goUp" href="#start"><img src="/assets/icons/arrow-goUp.png" alt="Go to hero section"></a>
+  <a class="goUp" href="#start"
+    ><img src="/assets/icons/arrow-goUp.png" alt="Go to hero section"
+  /></a>
 </div>
-<img class="shadow-contact" src="/assets/shadows/shadow-contact.svg" alt="">
+<img class="shadow-contact" src="/assets/shadows/shadow-contact.svg" alt="" />

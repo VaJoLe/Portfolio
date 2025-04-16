@@ -60,13 +60,13 @@
     border: none;
     color: white;
     border-radius: 10px;
-    background-color: #70e61c;
+    background-color: #4B47FF;
     font-size: 23px;
     font-weight: 400;
     &:hover {
       width: 215px;
       height: 63px;
-      background-color: #9747ff;
+      background-color: #1CE6B6;
       transition: all 75ms ease-in-out;
     }
   }
@@ -82,12 +82,13 @@
 .strokeSkills {
   width: 287px;
   height: 4px;
-  background-color: #1cdae6;
+  background-color: #1CE6B6;
 }
 
 .skillsTextContent {
+  height: 376px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
   padding-right: 100px;
 }

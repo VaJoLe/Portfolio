@@ -41,14 +41,14 @@
     .project-text {
       flex : 1;
       .title {
-        color:#9747FF;
+        color:#1CE6B6;
         margin-bottom: 8px;
         font-size: 32px;
         font-weight: 700;
       }
   
       .stack {
-        color: #4caf50;
+        color: #4B47FF;
         font-size: 23px;
         font-weight: 400;
       }
@@ -71,17 +71,17 @@
           font-weight: 400;
   
           &:first-child {
-            background: #9747FF;
+            background: #1CE6B6;
             color: white;
           }
   
           &:last-child {
-            border: 1px solid #70E61C;
-            color: #70E61C;
+            border: 1px solid #4B47FF;
+            color: #4B47FF;
           }
           &:hover {
             transition: 75ms;
-            background: #70E61C;
+            background: #4B47FF;
             color: white;
           }
         }

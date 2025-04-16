@@ -1,90 +1,92 @@
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 92px;
-    font-size: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 92px;
+  font-size: 23px;
 }
 
 .name {
+  a {
+    text-decoration: none;
     h3 {
-        color: white;
-        font-size: 30px;
-        font-weight: 700;
+      color: white;
+      font-size: 30px;
+      font-weight: 700;
     }
     span {
-        color: #70E61C;
+      color: #4b47ff;
     }
   }
+}
 
 .menu {
-    display: flex;
-    width: 326px;
-    height: 32px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    a {
-        position: relative;
-        display: inline-block;
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-        transition: color 0.75ms ease;
-    
-        &::after {
-        content: "";
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 50px;
-        height: 4px;
-        background-color: #9747FF;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.75ms ease;
-        }
-    
-        &:hover {
-        color: #70E61C;
-        }
-    
-        &.active {
-        color: #70E61C;
-    
-        &::after {
-            transform: scaleX(1);
-        }
-        }
+  display: flex;
+  width: 326px;
+  height: 32px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.75ms ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 40px;
+      height: 5px;
+      background-color: #1ce6b6;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.75ms ease;
     }
+
+    &:hover {
+      color: #4b47ff;
+    }
+
+    &.active {
+      color: #4b47ff;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
 }
 
 .languageBtn {
-    display: flex;
-    gap: 10px;
-  
-    button {
-      background: none;
-      border: 1px solid #70E61C;
-      border-radius: 10px;
+  display: flex;
+  gap: 10px;
+
+  button {
+    background: none;
+    border: 1px solid #4b47ff;
+    border-radius: 10px;
+    color: white;
+    width: 38px;
+    height: 32px;
+    cursor: pointer;
+    transition: all 75ms ease;
+    font-weight: normal;
+
+    &:hover {
+      background-color: #1ce6b6; // Lila bei Hover
+      border: none;
+    }
+
+    &.active {
+      background-color: #4b47ff; // Grün wenn aktiv
       color: white;
-      width: 38px;
-      height: 32px;
-      cursor: pointer;
-      transition: all 75ms ease;
-      font-weight: normal;
-  
-      &:hover {
-        background-color: #9747FF; // Lila bei Hover
-        border: none;
-      }
-  
-      &.active {
-        background-color: #70E61C; // Grün wenn aktiv
-        color: white;
-        font-weight: bold;
-      }
+      font-weight: bold;
     }
   }
-  
+}

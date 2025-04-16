@@ -1,4 +1,5 @@
-<div id="skills" class="skillsIcons">
+<div id="skills" style="position: absolute; top: 0;"></div>
+<div class="skillsIcons">
   <div class="skillIconBox" *ngFor="let item of imageList">
     <img [src]="item.image" [alt]="item.title" />
     <p>{{ item.title }}</p>
@@ -24,4 +25,3 @@
     <button>Get in touch</button>
   </div>
 </div>
-<img class="shadow-skills" src="/assets/shadows/shadow-skills.svg" alt="">
