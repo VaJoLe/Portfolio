@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  activeLanguage: string = 'DE'; // Standardwert
+  activeLanguage: string = 'EN';
 
-
-
-
-
-
+  constructor(private translate: TranslateService) {
+    const current = translate.currentLang || translate.defaultLang;
+    this.activeLanguage = current?.toUpperCase() ?? 'EN';
+  }
 
   ngOnInit(): void {
     const links = document.querySelectorAll<HTMLAnchorElement>('.menu a');
@@ -28,10 +28,8 @@ export class HeaderComponent {
       }
     };
 
-    // Direkt beim Init aktivieren (falls schon Hash da ist)
     activateLinkByHash();
 
-    // Click-Handler für alle Menü-Links
     links.forEach((link) => {
       link.addEventListener('click', () => {
         setTimeout(activateLinkByHash, 0);
@@ -39,8 +37,8 @@ export class HeaderComponent {
     });
   }
 
-
-  setLanguage(lang: string) {
+  setLanguage(lang: 'EN' | 'DE') {
     this.activeLanguage = lang;
+    this.translate.use(lang.toLowerCase());
   }
 }

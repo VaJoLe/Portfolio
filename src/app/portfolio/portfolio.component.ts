@@ -16,7 +16,7 @@ export class PortfolioComponent {
       techStack: 'Angular | TypeScript | HTML | CSS | Firebase',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
       liveUrl: 'https://your-join-live-url.com',
-      githubUrl: 'https://github.com/your-repo/join',
+      githubUrl: 'https://github.com/VaJoLe/join',
       imageUrl: 'assets/projects/Join.png',
     },
     {

@@ -2,17 +2,17 @@
 
 <div class="contact-head">
   <div class="contact-stroke"></div>
-  <h2>Contact</h2>
+  <h2>{{ "CONTACT.TITLE" | translate }}</h2>
 </div>
 
 <div class="contact-content">
   <div class="left">
-    <h3>Got a problem to solve?</h3>
+    <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
+    <p>{{ "CONTACT.DESCRIPTION" | translate }}</p>
     <p>
-      Feel free to reach out! I’m looking for a front-end role where I can bring
-      clean code, fresh ideas, and real value to your projects.
+      {{ "CONTACT.CALLTOACTION" | translate }}
+      <span>{{ "CONTACT.CONTACTME" | translate }}</span>
     </p>
-    <p>Need a Frontend developer? <span>Contact me!</span></p>
   </div>
   <div class="right">
     <form
@@ -27,13 +27,13 @@
           name="name"
           id="name"
           #name="ngModel"
-          placeholder="Your name"
+          placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}"
           [(ngModel)]="contactData.name"
           required
           pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄäÖöÜüß\-'\s]{2,50}$"
         />
         @if (!name.valid && name.dirty && name.value) {
-        <div class="error-message">Your name is required.</div>
+        <div class="error-message">{{ "CONTACT.ERROR_NAME" | translate }}</div>
         }
       </div>
       <div>
@@ -42,20 +42,20 @@
           name="email"
           id="email"
           #email="ngModel"
-          placeholder="Your email"
+          placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}"
           [(ngModel)]="contactData.email"
           required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
         @if (!email.valid && email.dirty && email.value) {
-        <div class="error-message">Your email is required.</div>
+        <div class="error-message">{{ "CONTACT.ERROR_EMAIL" | translate }}</div>
         }
       </div>
       <div>
         <textarea
           name="message"
           id="message"
-          placeholder="Your message"
+          placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}"
           #message="ngModel"
           [(ngModel)]="contactData.message"
           rows="6"
@@ -63,7 +63,9 @@
           minlength="5"
         ></textarea>
         @if (!message.valid && message.dirty && message.value) {
-        <div class="error-message">Your message is required.</div>
+        <div class="error-message">
+          {{ "CONTACT.ERROR_MESSAGE" | translate }}
+        </div>
         }
       </div>
       <div class="checkbox-row">
@@ -76,22 +78,22 @@
           #privacy="ngModel"
         />
         <label for="privacy">
-          I've read the
-          <a href="privacy" >privacy policy</a> and agree to the
-          processing of my data as outlined.
+          {{ "CONTACT.PRIVACY_TEXT1" | translate }}
+          <a href="privacy">{{ "CONTACT.PRIVACY_LINK" | translate }}</a>
+          {{ "CONTACT.PRIVACY_TEXT2" | translate }}
         </label>
       </div>
       @if (!privacy.valid && privacy.touched) {
-      <div class="error-message">Please accept the privacy policy.</div>
+      <div class="error-message">{{ "CONTACT.ERROR_PRIVACY" | translate }}</div>
       }
       <div class="button">
         <button type="submit" [disabled]="!contactForm.valid">
-          Send message
+          {{ "CONTACT.BUTTON" | translate }}
         </button>
       </div>
     </form>
     <div class="success-popup" *ngIf="successMessageVisible">
-      Thanks for your message! I'll get back to you soon.
+      {{ "CONTACT.SUCCESS" | translate }}
     </div>
   </div>
 

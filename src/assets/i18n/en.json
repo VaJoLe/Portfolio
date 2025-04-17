@@ -1,0 +1,30 @@
+{
+  "ABOUT": {
+    "TITLE": "About me",
+    "INTRO1": "Hey there, I'm Jonas! I've always been fascinated by how technology shapes our world — from simple websites to complex applications that solve real-world problems. My passion for coding comes from the thrill of building something from scratch and seeing it come to life.",
+    "INTRO2": "What inspires me to keep improving is the challenge itself. Every project teaches me something new, and I enjoy pushing my limits to find better, cleaner solutions. It’s the small wins and \"aha\" moments that drive me forward.",
+    "INTRO3": "Let's connect and create something amazing together!",
+    "LOCATION": "I'm based in the Vogtland region, but I'm also open to remote work and flexible working arrangements.",
+    "CURIOSITY": "I'm always curious and open-minded when it comes to new technologies. I enjoy learning, exploring new tools, and constantly improving my skills to stay up to date and grow as a developer.",
+    "PROBLEM_SOLVING": "When solving problems, I rely on a mix of analytical thinking, creativity, and persistence. I enjoy breaking down complex challenges, exploring different solutions, and learning from each step."
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "QUESTION": "Got a problem to solve?",
+    "DESCRIPTION": "Feel free to reach out! I’m looking for a front-end role where I can bring clean code, fresh ideas, and real value to your projects.",
+    "CALLTOACTION": "Need a Frontend developer?",
+    "CONTACTME": "Contact me!",
+    "PLACEHOLDER_NAME": "Your name",
+    "PLACEHOLDER_EMAIL": "Your email",
+    "PLACEHOLDER_MESSAGE": "Your message",
+    "ERROR_NAME": "Your name is required.",
+    "ERROR_EMAIL": "Your email is required.",
+    "ERROR_MESSAGE": "Your message is required.",
+    "PRIVACY_TEXT1": "I've read the",
+    "PRIVACY_LINK": "privacy policy",
+    "PRIVACY_TEXT2": "and agree to the processing of my data as outlined.",
+    "ERROR_PRIVACY": "Please accept the privacy policy.",
+    "BUTTON": "Send message",
+    "SUCCESS": "Thanks for your message! I'll get back to you soon."
+  }
+}

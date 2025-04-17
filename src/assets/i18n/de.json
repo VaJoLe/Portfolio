@@ -1,0 +1,30 @@
+{
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "INTRO1": "Hallo, ich bin Jonas! Ich war schon immer fasziniert davon, wie Technologie unsere Welt formt - von einfachen Websites bis hin zu komplexen Anwendungen, die die Probleme der realen Welt lösen. Meine Leidenschaft für das Programmieren kommt von dem Nervenkitzel, etwas von Grund auf zu entwickeln und zu sehen, wie es zum Leben erwacht.",
+    "INTRO2": "Was mich antreibt, immer besser zu werden, ist die Herausforderung selbst. Bei jedem Projekt lerne ich etwas Neues, und ich genieße es, an meine Grenzen zu gehen, um bessere und sauberere Lösungen zu finden. Es sind die kleinen Erfolge und Aha-Momente, die mich anspornen.",
+    "INTRO3": "Lassen Sie uns zusammenarbeiten und gemeinsam etwas Erstaunliches schaffen.",
+    "LOCATION": "Ich bin im Vogtland ansässig, bin aber auch offen für Fernarbeit und flexible Arbeitsmodelle.",
+    "CURIOSITY": "Ich bin immer neugierig und aufgeschlossen, wenn es um neue Technologien geht. Ich genieße es, zu lernen, neue Tools zu erforschen und meine Fähigkeiten ständig zu verbessern, um auf dem neuesten Stand zu bleiben und als Entwickler zu wachsen.",
+    "PROBLEM_SOLVING": "Bei der Lösung von Problemen setze ich auf eine Mischung aus analytischem Denken, Kreativität und Ausdauer. Ich genieße es, komplexe Herausforderungen aufzuschlüsseln, verschiedene Lösungen zu erkunden und aus jedem Schritt zu lernen."
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "QUESTION": "Ein Problem zu lösen?",
+    "DESCRIPTION": "Melde dich gern! Ich suche eine Position als Frontend-Entwickler, in der ich sauberen Code, frische Ideen und echten Mehrwert einbringen kann.",
+    "CALLTOACTION": "Brauchst du einen Frontend-Entwickler?",
+    "CONTACTME": "Schreib mir!",
+    "PLACEHOLDER_NAME": "Dein Name",
+    "PLACEHOLDER_EMAIL": "Deine E-Mail",
+    "PLACEHOLDER_MESSAGE": "Deine Nachricht",
+    "ERROR_NAME": "Dein Name ist erforderlich.",
+    "ERROR_EMAIL": "Deine E-Mail ist erforderlich.",
+    "ERROR_MESSAGE": "Deine Nachricht ist erforderlich.",
+    "PRIVACY_TEXT1": "Ich habe die",
+    "PRIVACY_LINK": "Datenschutzerklärung",
+    "PRIVACY_TEXT2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "ERROR_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
+    "BUTTON": "Nachricht senden",
+    "SUCCESS": "Danke für deine Nachricht! Ich melde mich bald bei dir."
+  }
+}
