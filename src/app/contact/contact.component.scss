@@ -150,9 +150,9 @@
     }
   }
 
-  input[type="text"].ng-invalid.ng-dirty,
-  input[type="email"].ng-invalid.ng-dirty,
-  textarea.ng-invalid.ng-dirty {
+  input[type="text"].ng-invalid.ng-dirty:not(:placeholder-shown),
+  input[type="email"].ng-invalid.ng-dirty:not(:placeholder-shown),
+  textarea.ng-invalid.ng-dirty:not(:placeholder-shown) {
     border: 2px solid #ff416c;
   }
 

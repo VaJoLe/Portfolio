@@ -24,7 +24,7 @@ export class PortfolioComponent {
       techStack: 'JavaScript | HTML | CSS',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       liveUrl: 'https://your-sharkie-live-url.com',
-      githubUrl: 'https://github.com/your-repo/sharkie',
+      githubUrl: 'https://github.com/VaJoLe/ElPolloLoco',
       imageUrl: 'assets/projects/ElPolloLoco.png',
     },
     {
@@ -32,7 +32,7 @@ export class PortfolioComponent {
       techStack: 'JavaScript | HTML | CSS | API',
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       liveUrl: 'https://your-sharkie-live-url.com',
-      githubUrl: 'https://github.com/your-repo/sharkie',
+      githubUrl: 'https://github.com/VaJoLe/PokeDex',
       imageUrl: 'assets/projects/Pokedex.png',
     },
     // weitere Projekte...
