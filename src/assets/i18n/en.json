@@ -8,6 +8,7 @@
     "CURIOSITY": "I'm always curious and open-minded when it comes to new technologies. I enjoy learning, exploring new tools, and constantly improving my skills to stay up to date and grow as a developer.",
     "PROBLEM_SOLVING": "When solving problems, I rely on a mix of analytical thinking, creativity, and persistence. I enjoy breaking down complex challenges, exploring different solutions, and learning from each step."
   },
+
   "CONTACT": {
     "TITLE": "Contact",
     "QUESTION": "Got a problem to solve?",
@@ -26,5 +27,107 @@
     "ERROR_PRIVACY": "Please accept the privacy policy.",
     "BUTTON": "Send message",
     "SUCCESS": "Thanks for your message! I'll get back to you soon."
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "INTRO": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "PROJECTS": [
+      {
+        "title": "Join",
+        "techStack": "Angular | TypeScript | HTML | CSS | Firebase",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "liveUrl": "https://your-join-live-url.com'",
+        "githubUrl": "https://github.com/VaJoLe/join'",
+        "imageUrl": "assets/projects/Join.png"
+      },
+      {
+        "title": "El Pollo Loco",
+        "techStack": "JavaScript | HTML | CSS",
+        "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "liveUrl": "https://your-sharkie-live-url.com",
+        "githubUrl": "https://github.com/VaJoLe/ElPolloLoco",
+        "imageUrl": "assets/projects/ElPolloLoco.png"
+      },
+      {
+        "title": "Pokedex",
+        "techStack": "JavaScript | HTML | CSS | API",
+        "description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+        "liveUrl": "https://your-sharkie-live-url.com",
+        "githubUrl": "https://github.com/VaJoLe/PokeDex",
+        "imageUrl": "assets/projects/Pokedex.png"
+      }
+    ]
+  },
+
+  "HERO": {
+  "IAM": "I am",
+  "ROLE": "FRONTEND DEVELOPER",
+  "BUTTON": "Let's talk!",
+  "SCROLL": "Scroll down"
+},
+
+"IMPRINT": {
+  "TITLE": "Imprint",
+  "CONTACT": "Contact",
+  "PHONE": "Phone",
+  "EMAIL": "Email",
+  "RESPONSIBLE": "Editorial Responsibility",
+  "SOURCE": "Source:"
+},
+
+"PRIVACY": {
+  "TITLE": "Privacy Policy",
+  "RESPONSIBLE": "Responsible for data processing on this website:",
+  "GENERAL_TITLE": "General Information",
+  "GENERAL_TEXT": "The protection of your personal data is particularly important to me. I process your data exclusively on the basis of legal regulations (GDPR, TMG).",
+  "CONTACTFORM_TITLE": "Contact Form",
+  "CONTACTFORM_TEXT": "If you send me a message via the contact form, your name, email address and message will be transmitted to me. This data is used exclusively to respond to your inquiry. It will not be passed on to third parties.",
+  "NO_COOKIES_TITLE": "No Cookies / No Tracking Tools",
+  "NO_COOKIES_TEXT": "My website does not use <strong>cookies</strong>, analytics tools such as Google Analytics or embedded content from third-party providers like YouTube or Google Maps.",
+  "EXTERNAL_LINKS_TITLE": "External Links",
+  "EXTERNAL_LINKS_TEXT": "My website contains links to external platforms such as <strong>GitHub</strong> and <strong>LinkedIn</strong>. If you click on one of these links, you will leave my website and be redirected to the respective provider. Their privacy policies apply there.",
+  "LOGFILES_TITLE": "Server Logfiles",
+  "LOGFILES_TEXT": "Since my website is currently privately hosted, no server logfiles are created or stored by a hosting provider. If this changes in the future, this privacy policy will be updated accordingly.",
+  "RIGHTS_TITLE": "Your Rights",
+  "RIGHTS_TEXT1": "You have the right at any time to obtain information about the personal data stored by me, their origin and recipients, as well as the purpose of the data processing. You also have the right to correct, restrict, delete or revoke the processing.",
+  "RIGHTS_TEXT2": "If you have questions about data protection, you can contact me at any time via the email address provided above."
+},
+
+"REFERENCES": [
+  {
+    "quote": "Jonas really kept the team together with his great organization and clear communication. We wouldn’t have got this far without his commitment.",
+    "author": "V. Schuster - Team Partner",
+    "image": "assets/references/person1.png"
+  },
+  {
+    "quote": "Jonas was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+    "author": "E.Eichinger - Team Partner",
+    "image": "assets/references/person2.png"
+  },
+  {
+    "quote": "It was a great pleasure to work with Jonas. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
+    "author": "I. Nuber - Frontend Engineer",
+    "image": "assets/references/person3.png"
   }
+],
+
+"FOOTER": {
+  "IMPRINT": "Legal Notice"
+},
+
+"HEADER": {
+  "ABOUT": "About me",
+  "SKILLS": "Skills",
+  "PORTFOLIO": "Portfolio"
+},
+
+"SKILLS": {
+  "TITLE": "Skills",
+  "DESCRIPTION": "I've worked on various projects using front-end technologies like HTML, CSS, and JavaScript, gaining hands-on experience in building responsive and user-friendly interfaces. <br /><br />I'm always eager to learn and explore new tools and frameworks, because the tech world moves fast — and I enjoy keeping up. <br /><br />For me, continuous learning is essential to stay current and deliver modern, efficient solutions in web development.",
+  "BUTTON": "Get in touch",
+  "LEARNING": "Continually learning"
+}
+
+
 }

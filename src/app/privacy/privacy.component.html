@@ -1,73 +1,41 @@
 <div class="privacy">
-  <h1>Datenschutzerklärung</h1>
+  <h1>{{ "PRIVACY.TITLE" | translate }}</h1>
 
   <p>
-    <strong>Verantwortlich für die Datenverarbeitung auf dieser Website:</strong
+    <strong>{{ "PRIVACY.RESPONSIBLE" | translate }}</strong
     ><br />
-    Vanessa Celine<br />
-    vanessa&#64;example.com
+    Jonas Valtin<br />
+    j.valtin&#64;online.de
   </p>
 
   <div class="privacy-container">
-    <h2>Allgemeines</h2>
-    <p>
-      Der Schutz deiner persönlichen Daten ist mir ein besonderes Anliegen. Ich
-      verarbeite deine Daten daher ausschließlich auf Grundlage der gesetzlichen
-      Bestimmungen (DSGVO, TMG).
-    </p>
+    <h2>{{ "PRIVACY.GENERAL_TITLE" | translate }}</h2>
+    <p>{{ "PRIVACY.GENERAL_TEXT" | translate }}</p>
   </div>
 
   <div class="privacy-container">
-    <h2>Kontaktformular</h2>
-    <p>
-      Wenn du mir über das Kontaktformular eine Nachricht sendest, werden dein
-      Name, deine E-Mail-Adresse sowie deine Nachricht an mich übermittelt.
-      Diese Daten nutze ich ausschließlich zur Beantwortung deiner Anfrage. Eine
-      Weitergabe an Dritte erfolgt nicht.
-    </p>
+    <h2>{{ "PRIVACY.CONTACTFORM_TITLE" | translate }}</h2>
+    <p>{{ "PRIVACY.CONTACTFORM_TEXT" | translate }}</p>
   </div>
 
   <div class="privacy-container">
-    <h2>Keine Cookies / keine Tracking-Tools</h2>
-    <p>
-      Meine Website verwendet <strong>keine Cookies</strong>, keine
-      Analyse-Tools wie Google Analytics und keine eingebetteten Inhalte von
-      Drittanbietern wie YouTube oder Google Maps.
-    </p>
+    <h2>{{ "PRIVACY.NO_COOKIES_TITLE" | translate }}</h2>
+    <p [innerHTML]="'PRIVACY.NO_COOKIES_TEXT' | translate"></p>
   </div>
 
   <div class="privacy-container">
-    <h2>Externe Links</h2>
-    <p>
-      Auf meiner Website befinden sich Links zu externen Plattformen wie
-      <strong>GitHub</strong> und <strong>LinkedIn</strong>. Wenn du auf einen
-      dieser Links klickst, verlässt du meine Website und wirst zur jeweiligen
-      Seite weitergeleitet. Dort gelten die Datenschutzbestimmungen des
-      jeweiligen Anbieters.
-    </p>
+    <h2>{{ "PRIVACY.EXTERNAL_LINKS_TITLE" | translate }}</h2>
+    <p [innerHTML]="'PRIVACY.EXTERNAL_LINKS_TEXT' | translate"></p>
   </div>
 
   <div class="privacy-container">
-    <h2>Server-Logfiles</h2>
-    <p>
-      Da meine Website aktuell rein privat gehostet wird, werden keine
-      Server-Logfiles durch einen Hosting-Dienstleister erstellt oder
-      gespeichert. Sollte sich das zukünftig ändern, wird diese
-      Datenschutzerklärung entsprechend angepasst.
-    </p>
+    <h2>{{ "PRIVACY.LOGFILES_TITLE" | translate }}</h2>
+    <p>{{ "PRIVACY.LOGFILES_TEXT" | translate }}</p>
   </div>
 
   <div class="privacy-container">
-    <h2>Deine Rechte</h2>
-    <p>
-      Du hast jederzeit das Recht auf Auskunft über die bei mir gespeicherten
-      personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der
-      Datenverarbeitung. Außerdem hast du das Recht auf Berichtigung,
-      Einschränkung, Löschung oder Widerruf der Verarbeitung.
-    </p>
-    <p>
-      Bei Fragen zum Thema Datenschutz kannst du dich jederzeit unter der oben
-      angegebenen E-Mail-Adresse an mich wenden.
-    </p>
+    <h2>{{ "PRIVACY.RIGHTS_TITLE" | translate }}</h2>
+    <p>{{ "PRIVACY.RIGHTS_TEXT1" | translate }}</p>
+    <p>{{ "PRIVACY.RIGHTS_TEXT2" | translate }}</p>
   </div>
 </div>

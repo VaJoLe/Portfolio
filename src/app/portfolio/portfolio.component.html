@@ -1,14 +1,11 @@
 <div id="portfolio"  style="position: absolute; top: 0;"></div>
 <div class="portfolio">
   <div class="strokeLeft"></div>
-  <h2 class="">Portfolio</h2>
+  <h2>{{ 'PORTFOLIO.TITLE' | translate }}</h2>
   <div class="strokeRight"></div>
 </div>
 <div class="portfolio-intro">
-  <p>
-    Explore a selection of my work here - Interact with projects to see my
-    skills in action.
-  </p>
+  <p>{{ portfolioIntro }}</p>
 </div>
 
 <div *ngFor="let project of projects; let i = index">

@@ -1,10 +1,11 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, NgFor],
+  imports: [CommonModule, NgFor, TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -51,7 +52,7 @@ export class SkillsComponent {
       image: '/assets/skills/MD.png'
     },
     {
-      title: 'Continually Learning',
+      title: 'LEARNING',
       image: '/assets/skills/Interest.png'
     }
  ];

@@ -1,27 +1,21 @@
-<div id="skills" style="position: absolute; top: 0;"></div>
+<div id="skills" style="position: absolute; top: 0"></div>
 <div class="skillsIcons">
   <div class="skillIconBox" *ngFor="let item of imageList">
     <img [src]="item.image" [alt]="item.title" />
-    <p>{{ item.title }}</p>
+    <p>
+      {{
+        item.title === "LEARNING" ? ("SKILLS.LEARNING" | translate) : item.title
+      }}
+    </p>
   </div>
 </div>
 <div class="skillsText">
   <div class="skillsTextTitle">
-    <h2>Skills</h2>
+    <h2>{{ "SKILLS.TITLE" | translate }}</h2>
     <div class="strokeSkills"></div>
   </div>
   <div class="skillsTextContent">
-    <p>
-      I've worked on various projects using front-end technologies like HTML,
-      CSS, and JavaScript, gaining hands-on experience in building responsive
-      and user-friendly interfaces. <br />
-      <br />
-      I'm always eager to learn and explore new tools and frameworks, because
-      the tech world moves fast — and I enjoy keeping up. <br />
-      <br />
-      For me, continuous learning is essential to stay current and deliver
-      modern, efficient solutions in web development.
-    </p>
-    <button>Get in touch</button>
+    <p [innerHTML]="'SKILLS.DESCRIPTION' | translate"></p>
+    <button>{{ "SKILLS.BUTTON" | translate }}</button>
   </div>
 </div>

@@ -9,7 +9,8 @@ nav {
 
 .name {
   a {
-    text-decoration: none;
+    text-decoration: none;display: flex;
+    align-items: center;
     h3 {
       color: white;
       font-size: 30px;

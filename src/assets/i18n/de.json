@@ -8,6 +8,7 @@
     "CURIOSITY": "Ich bin immer neugierig und aufgeschlossen, wenn es um neue Technologien geht. Ich genieße es, zu lernen, neue Tools zu erforschen und meine Fähigkeiten ständig zu verbessern, um auf dem neuesten Stand zu bleiben und als Entwickler zu wachsen.",
     "PROBLEM_SOLVING": "Bei der Lösung von Problemen setze ich auf eine Mischung aus analytischem Denken, Kreativität und Ausdauer. Ich genieße es, komplexe Herausforderungen aufzuschlüsseln, verschiedene Lösungen zu erkunden und aus jedem Schritt zu lernen."
   },
+
   "CONTACT": {
     "TITLE": "Kontakt",
     "QUESTION": "Ein Problem zu lösen?",
@@ -26,5 +27,107 @@
     "ERROR_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
     "BUTTON": "Nachricht senden",
     "SUCCESS": "Danke für deine Nachricht! Ich melde mich bald bei dir."
+  },
+
+  "PORTFOLIO": {
+    "TITLE": "Portfolio",
+    "INTRO": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "PROJECTS": [
+      {
+        "title": "Join",
+        "techStack": "Angular | TypeScript | HTML | CSS | Firebase",
+        "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "liveUrl": "https://your-join-live-url.com'",
+        "githubUrl": "https://github.com/VaJoLe/join'",
+        "imageUrl": "assets/projects/Join.png"
+      },
+      {
+        "title": "El Pollo Loco",
+        "techStack": "JavaScript | HTML | CSS",
+        "description": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "liveUrl": "https://your-sharkie-live-url.com",
+        "githubUrl": "https://github.com/VaJoLe/ElPolloLoco",
+        "imageUrl": "assets/projects/ElPolloLoco.png"
+      },
+      {
+        "title": "Pokedex",
+        "techStack": "JavaScript | HTML | CSS | API",
+        "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+        "liveUrl": "https://your-sharkie-live-url.com",
+        "githubUrl": "https://github.com/VaJoLe/PokeDex",
+        "imageUrl": "assets/projects/Pokedex.png"
+      }
+    ]
+  },
+
+  "HERO": {
+  "IAM": "Ich bin",
+  "ROLE": "FRONTEND-ENTWICKLER",
+  "BUTTON": "Lass uns reden!",
+  "SCROLL": "Runterscrollen"
+},
+
+"IMPRINT": {
+  "TITLE": "Impressum",
+  "CONTACT": "Kontakt",
+  "PHONE": "Telefon",
+  "EMAIL": "E-Mail",
+  "RESPONSIBLE": "Redaktionell verantwortlich",
+  "SOURCE": "Quelle:"
+},
+
+"PRIVACY": {
+  "TITLE": "Datenschutzerklärung",
+  "RESPONSIBLE": "Verantwortlich für die Datenverarbeitung auf dieser Website:",
+  "GENERAL_TITLE": "Allgemeines",
+  "GENERAL_TEXT": "Der Schutz deiner persönlichen Daten ist mir ein besonderes Anliegen. Ich verarbeite deine Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).",
+  "CONTACTFORM_TITLE": "Kontaktformular",
+  "CONTACTFORM_TEXT": "Wenn du mir über das Kontaktformular eine Nachricht sendest, werden dein Name, deine E-Mail-Adresse sowie deine Nachricht an mich übermittelt. Diese Daten nutze ich ausschließlich zur Beantwortung deiner Anfrage. Eine Weitergabe an Dritte erfolgt nicht.",
+  "NO_COOKIES_TITLE": "Keine Cookies / keine Tracking-Tools",
+  "NO_COOKIES_TEXT": "Meine Website verwendet <strong>keine Cookies</strong>, keine Analyse-Tools wie Google Analytics und keine eingebetteten Inhalte von Drittanbietern wie YouTube oder Google Maps.",
+  "EXTERNAL_LINKS_TITLE": "Externe Links",
+  "EXTERNAL_LINKS_TEXT": "Auf meiner Website befinden sich Links zu externen Plattformen wie <strong>GitHub</strong> und <strong>LinkedIn</strong>. Wenn du auf einen dieser Links klickst, verlässt du meine Website und wirst zur jeweiligen Seite weitergeleitet. Dort gelten die Datenschutzbestimmungen des jeweiligen Anbieters.",
+  "LOGFILES_TITLE": "Server-Logfiles",
+  "LOGFILES_TEXT": "Da meine Website aktuell rein privat gehostet wird, werden keine Server-Logfiles durch einen Hosting-Dienstleister erstellt oder gespeichert. Sollte sich das zukünftig ändern, wird diese Datenschutzerklärung entsprechend angepasst.",
+  "RIGHTS_TITLE": "Deine Rechte",
+  "RIGHTS_TEXT1": "Du hast jederzeit das Recht auf Auskunft über die bei mir gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Außerdem hast du das Recht auf Berichtigung, Einschränkung, Löschung oder Widerruf der Verarbeitung.",
+  "RIGHTS_TEXT2": "Bei Fragen zum Thema Datenschutz kannst du dich jederzeit unter der oben angegebenen E-Mail-Adresse an mich wenden."
+},
+
+"REFERENCES": [
+  {
+    "quote": "Jonas hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
+    "author": "V. Schuster - Team Partner",
+    "image": "assets/references/person1.png"
+  },
+  {
+    "quote": "Jonas war ein Top-Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+    "author": "E.Eichinger - Team Partner",
+    "image": "assets/references/person2.png"
+  },
+  {
+    "quote": "Es war eine große Freude, mit Jonas zu arbeiten. Er versteht es, die Teammitglieder anzuspornen und zu ermutigen, die bestmögliche Arbeit zu leisten, wobei er immer etwas zum Brainstorming beiträgt. Wenn es um das Wohlbefinden der Gruppenmitglieder ging, war er immer präsent und verfügbar, um zuzuhören und anderen zu helfen, und er hatte auch einen großartigen Sinn für Humor.",
+    "author": "I. Nuber - Frontend Engineer",
+    "image": "assets/references/person3.png"
   }
+],
+
+"FOOTER": {
+  "IMPRINT": "Impressum"
+},
+
+"HEADER": {
+  "ABOUT": "Über mich",
+  "SKILLS": "Fähigkeiten",
+  "PORTFOLIO": "Portfolio"
+},
+
+"SKILLS": {
+  "TITLE": "Fähigkeiten",
+  "DESCRIPTION": "Ich habe an verschiedenen Projekten gearbeitet, bei denen Front-End-Technologien wie HTML, CSS und JavaScript zum Einsatz kamen, und dabei praktische Erfahrungen bei der Erstellung von responsiven und benutzerfreundlichen Oberflächen gesammelt. <br /><br /> Ich bin immer bestrebt, neue Tools und Frameworks zu erlernen und zu erforschen, denn die technische Welt bewegt sich schnell - und ich halte gerne mit. <br /><br /> Für mich ist ständiges Lernen unerlässlich, um auf dem neuesten Stand zu bleiben und moderne, effiziente Lösungen in der Webentwicklung zu liefern.",
+  "BUTTON": "Kontakt aufnehmen",
+  "LEARNING": "Ständiges Lernen"
+}
+
+
 }
