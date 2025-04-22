@@ -6,9 +6,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -21,6 +19,10 @@
   height: 100px;
   margin-left: -80px;
   overflow-y: hidden;
+}
+
+:host.lang-de .i-am {
+  display: none;
 }
 
 .name {
@@ -60,6 +62,11 @@ button {
     background-color: #1ce6b6;
     transition: all 75ms ease-in-out;
   }
+}
+
+:host.lang-de button {
+  width: auto;
+  padding: 0 20px;
 }
 
 .socials {
@@ -113,6 +120,12 @@ button {
   }
 }
 
+:host.lang-de .scroll {
+  width: auto;
+  top: 800px;
+  right: 10px;
+}
+
 .shadow-top-left {
   position: absolute;
   top: 120px;
@@ -129,4 +142,62 @@ button {
   width: 700px;
   height: 800px;
   z-index: -1;
+}
+
+@media (max-width: 390px) {
+  .hero-content {
+    height: 80px;
+    width: 290px;
+    justify-content: space-between;
+    top: 280px;
+  }
+  :host-context(.lang-de) .hero-content {
+    justify-content: center;
+  }
+  .i-am {
+    font-size: 22px;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: -20px;
+    margin-bottom: -10px;
+  }
+  .name {
+    font-size: 35px;
+    width: auto;
+    line-height: 40px;
+  }
+  .title {
+    font-size: 23px;
+  }
+  button {
+    top: 430px;
+    font-size: 16px;
+    width: 133px;
+    height: 49px;
+  }
+  .socials {
+    top: 610px;
+    a {
+      width: 30px;
+      height: 30px;
+    }
+    span {
+      width: 70px;
+    }
+  }
+  .scroll {
+    display: none;
+  }
+  .shadow-top-left {
+    width: 300px;
+    height: 400px;
+    left: -150px;
+  }
+  .shadow-top-right {
+    width: 300px;
+    height: 400px;
+    top: 250px;
+    right: -180px;
+  }
 }

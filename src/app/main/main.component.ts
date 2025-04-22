@@ -6,6 +6,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { HeroComponent } from '../hero/hero.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ReferencesComponent } from '../references/references.component';
+import { LanguageClassDirective } from '../directives/language-class.directive';
 
 @Component({
   selector: 'app-main',
@@ -18,6 +19,7 @@ import { ReferencesComponent } from '../references/references.component';
     HeroComponent,
     PortfolioComponent,
     ReferencesComponent,
+    LanguageClassDirective,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

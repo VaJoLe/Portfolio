@@ -9,36 +9,29 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  activeLanguage: string = 'EN';
+  activeLanguage: 'en' | 'de' = 'de';
+  isMobileMenuOpen = false;
 
   constructor(private translate: TranslateService) {
-    const current = translate.currentLang || translate.defaultLang;
-    this.activeLanguage = current?.toUpperCase() ?? 'EN';
-  }
+    // Initialwert setzen
+    const current = this.translate.currentLang || this.translate.getDefaultLang() || 'de';
+    this.activeLanguage = current as 'en' | 'de';
+    this.translate.use(this.activeLanguage);
 
-  ngOnInit(): void {
-    const links = document.querySelectorAll<HTMLAnchorElement>('.menu a');
-
-    const activateLinkByHash = () => {
-      links.forEach((link) => link.classList.remove('active'));
-      const hash = window.location.hash;
-      const target = document.querySelector(`.menu a[href="${hash}"]`);
-      if (target) {
-        target.classList.add('active');
-      }
-    };
-
-    activateLinkByHash();
-
-    links.forEach((link) => {
-      link.addEventListener('click', () => {
-        setTimeout(activateLinkByHash, 0);
-      });
+    // Sprachwechsel beobachten
+    this.translate.onLangChange.subscribe((event) => {
+      this.activeLanguage = event.lang as 'en' | 'de';
     });
   }
 
-  setLanguage(lang: 'EN' | 'DE') {
-    this.activeLanguage = lang;
-    this.translate.use(lang.toLowerCase());
+  setLanguage(lang: 'en' | 'de') {
+    if (this.activeLanguage !== lang) {
+      this.translate.use(lang);
+      this.activeLanguage = lang;
+    }
   }
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }  
 }

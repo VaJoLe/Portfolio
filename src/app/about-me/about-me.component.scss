@@ -60,3 +60,46 @@ p {
   height: 720px;
   z-index: -1;
 }
+
+@media (max-width: 390px) {
+  .left {
+    width: 100%;
+    padding-top: 50px;
+    h2 {
+      font-size: 35px;
+      line-height: 40px;
+      padding-bottom: 15px;
+    }
+  }
+  .leftBottom {
+    height: auto;
+    width: 300px;
+    gap: 15px;
+    padding-top: 15px;
+    .about-me {
+      .img {
+        width: auto;
+        height: auto;
+      }
+      p {
+        flex: 1;
+        width: auto;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profil-pic {
+      width: 300px;
+    }
+    .shadow-pic {
+      width: 350px;
+      height: auto;
+      top: 50px;
+      right: unset;
+    }
+  }
+}
