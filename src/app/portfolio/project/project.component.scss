@@ -1,90 +1,133 @@
 .portfolio-card {
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &.reversed {
     .content-wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 32px;
-  
+      flex-direction: row-reverse;
+
       @media (max-width: 768px) {
         flex-direction: column;
       }
     }
-  
-    &.reversed {
-      .content-wrapper {
-        flex-direction: row-reverse;
-  
-        @media (max-width: 768px) {
-          flex-direction: column;
-        }
-      }
-      .project-text {
-        text-align: right;
-  
-        .buttons {
-          justify-content: flex-end;
-        }
-      }
-    }
-
-    .project-image {
-      width: 620px;
-      height: 340px;
-      padding: 60px 110px;
-      object-fit: cover;
-  
-      @media (max-width: 768px) {
-        width: 100%;
-      }
-    }
-  
     .project-text {
-      flex : 1;
-      .title {
-        color:#1CE6B6;
-        margin-bottom: 8px;
-        font-size: 32px;
-        font-weight: 700;
-      }
-  
-      .stack {
-        color: #4B47FF;
-        font-size: 23px;
-        font-weight: 400;
-      }
-  
-      .desc {
-        margin: 16px 0;
-        font-size: 16px;
-        font-weight: 400;
-      }
-  
+      text-align: right;
+
       .buttons {
-        display: flex;
-        gap: 86px;
-            transition: 75ms;
-        a {
-          text-decoration: none;
-          padding: 15px 30px;
-          border-radius: 10px;
-          font-size: 23px;
-          font-weight: 400;
-  
-          &:first-child {
-            background: #1CE6B6;
-            color: white;
-          }
-  
-          &:last-child {
-            border: 1px solid #4B47FF;
-            color: #4B47FF;
-          }
-          &:hover {
-            transition: 75ms;
-            background: #4B47FF;
-            color: white;
-          }
+        justify-content: flex-end;
+        @media (max-width: 390px){
+          justify-content: center;
         }
       }
     }
   }
+
+  .project-image {
+    width: 620px;
+    height: 340px;
+    padding: 60px 110px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .project-text {
+    flex: 1;
+    .title {
+      color: #1ce6b6;
+      margin-bottom: 8px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .stack {
+      color: #4b47ff;
+      font-size: 23px;
+      font-weight: 400;
+    }
+
+    .desc {
+      margin: 16px 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 86px;
+      transition: 75ms;
+      a {
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-size: 23px;
+        font-weight: 400;
+
+        &:first-child {
+          background: #1ce6b6;
+          color: white;
+        }
+
+        &:last-child {
+          border: 1px solid #4b47ff;
+          color: #4b47ff;
+        }
+        &:hover {
+          transition: 75ms;
+          background: #4b47ff;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .portfolio-card {
+    .content-wrapper {
+      gap: 0;
+      padding-top: 30px;
+    }
+    .project-image {
+      padding: 0;
+      width: 220px;
+      height: auto;
+    }
+    .project-text {
+      text-align: center;
+      width: 100%;
+      .title {
+        font-size: 23px;
+        text-align: center;
+      }
+      .stack {
+        font-size: 16px;
+        text-align: center;
+      }
+      .desc {
+        text-align: center;
+      }
+      .buttons {
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        a {
+          padding: 10px;
+          font-size: 16px;
+          width: 120px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
