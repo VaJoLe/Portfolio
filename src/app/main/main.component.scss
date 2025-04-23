@@ -89,9 +89,15 @@ app-contact {
   overflow: hidden;
 }
 
+@media (max-width: 600px){
+  app-hero {
+    height: 850px;
+  }
+}
+
 @media (max-width: 390px) {
   app-hero {
-    height: 666px;
+    height: 820px;
   }
 
   app-about-me {
@@ -105,13 +111,21 @@ app-contact {
 
   app-skills {
     flex-direction: column-reverse;
-    padding: 50px 20px;
+    padding: 50px 0;
     position: relative;
     height: auto;
     justify-content: start;
   }
 
   app-portfolio {
-    padding: 50px 20px;
+    padding: 50px 0;
+  }
+
+  app-references {
+    padding: 20px 0;
+  }
+
+  app-contact{
+    padding: 0;
   }
 }

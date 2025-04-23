@@ -12,7 +12,7 @@
       font-weight: 700;
     }
     span {
-      color: #4b47ff;
+      color: #1ce6b6;
     }
   }
   p {
@@ -53,5 +53,35 @@ a {
   &:hover {
     color: #1ce6b6;
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 390px) {
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    a{
+    h3 {
+      font-size: 30px;
+    }
+  }
+    p {
+      font-size: 16px;
+    }
+    .socials {
+      width: auto;
+      gap: 15px;
+      a {
+        width: 30px;
+        height: 30px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  a {
+    font-size: 14px;
   }
 }

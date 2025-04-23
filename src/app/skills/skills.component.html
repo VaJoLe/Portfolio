@@ -1,4 +1,4 @@
-<div id="skills" style="position: absolute; top: 0"></div>
+<div id="skills" style="position: absolute; top: -100px"></div>
 <div class="skillsIcons">
   <div class="skillIconBox" *ngFor="let item of imageList">
     <img [src]="item.image" [alt]="item.title" />
@@ -16,6 +16,8 @@
   </div>
   <div class="skillsTextContent">
     <p [innerHTML]="'SKILLS.DESCRIPTION' | translate"></p>
-    <button>{{ "SKILLS.BUTTON" | translate }}</button>
+    <a href="#contact">
+      <button>{{ "SKILLS.BUTTON" | translate }}</button>
+    </a>
   </div>
 </div>

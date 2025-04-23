@@ -237,3 +237,51 @@
   left: -500px;
   z-index: -1;
 }
+
+@media (max-width: 390px) {
+  .contact-head {
+    gap: 15px;
+    .contact-stroke {
+      width: 50px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .contact-content {
+    padding: 20px 20px 50px 20px;
+    flex-direction: column;
+    gap: 20px;
+    .left {
+      width: 100%;
+      h3 {
+        font-size: 23px;
+      }
+    }
+    .right {
+      form {
+        width: 100%;
+      }
+      .checkbox-row {
+        align-items: center;
+        label {
+          flex: 1;
+        }
+      }
+      .button {
+        button {
+          width: auto;
+          height: auto;
+          padding: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .goUp {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

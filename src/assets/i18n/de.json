@@ -30,7 +30,7 @@
   },
 
   "PORTFOLIO": {
-    "TITLE": "Portfolio",
+    "TITLE": "Projekte",
     "INTRO": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
     "PROJECTS": [
       {
@@ -119,7 +119,7 @@
 "HEADER": {
   "ABOUT": "Über mich",
   "SKILLS": "Fähigkeiten",
-  "PORTFOLIO": "Portfolio"
+  "PORTFOLIO": "Projekte"
 },
 
 "SKILLS": {
