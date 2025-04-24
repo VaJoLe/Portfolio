@@ -125,6 +125,47 @@
   transform: rotate(251deg);
 }
 
+@media (max-width: 1200px) {
+  .reference-wrapper {
+    padding-left: 100px;
+    .quote-icon {
+      left: 40px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .reference-wrapper {
+    flex-direction: column-reverse;
+    align-items: end;
+    padding-left: 0;
+
+    .quote-box {
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .quote-icon {
+      top: 300px;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .reference-wrapper {
+    .imgBox {
+      .author-image {
+        width: 200px;
+      }
+    }
+    .quote-icon {
+      top: 220px;
+    }
+  }
+}
+
+
 @media (max-width: 390px) {
   .reference-wrapper {
     flex-direction: column-reverse;

@@ -4,17 +4,13 @@
     flex-direction: row;
     align-items: center;
     gap: 32px;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
   }
 
   &.reversed {
     .content-wrapper {
       flex-direction: row-reverse;
 
-      @media (max-width: 768px) {
+      @media (max-width: 950px) {
         flex-direction: column;
       }
     }
@@ -23,7 +19,7 @@
 
       .buttons {
         justify-content: flex-end;
-        @media (max-width: 390px){
+        @media (max-width: 390px) {
           justify-content: center;
         }
       }
@@ -35,10 +31,6 @@
     height: 340px;
     padding: 60px 110px;
     object-fit: cover;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
   }
 
   .project-text {
@@ -87,6 +79,69 @@
           background: #4b47ff;
           color: white;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .portfolio-card {
+    .project-image {
+      width: 450px;
+      height: auto;
+      padding: 0;
+    }
+    .project-text {
+      .buttons {
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .portfolio-card {
+    .project-text {
+      .buttons {
+        a {
+          font-size: 20px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .portfolio-card {
+    .content-wrapper {
+      flex-direction: column;
+      gap: 0;
+    }
+    .project-image {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-card {
+    .project-text {
+      .buttons {
+        justify-content: center;
+      }
+    }
+  }
+
+  .portfolio-card.reversed {
+    .content-wrapper {
+      flex-direction: column !important;
+    }
+    .project-text {
+      text-align: center !important;
+
+      .buttons {
+        justify-content: center !important;
       }
     }
   }

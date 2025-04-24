@@ -31,6 +31,7 @@ app-about-me {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  gap: 50px;
 }
 
 app-skills {
@@ -42,6 +43,7 @@ app-skills {
   align-items: flex-start;
   position: relative;
   z-index: 1;
+  gap: 50px;
 }
 
 .vector {
@@ -89,9 +91,56 @@ app-contact {
   overflow: hidden;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1400px) {
+  app-about-me {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1200px) {
+  app-references {
+    padding: 0;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  app-about-me {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  app-skills {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+}
+
+@media (max-width: 900px) {
+  app-contact {
+    padding-right: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  app-references {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  app-about-me {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 600px) {
   app-hero {
     height: 850px;
+  }
+  app-portfolio {
+    text-align: center;
+    padding-top: 50px;
   }
 }
 
@@ -115,6 +164,7 @@ app-contact {
     position: relative;
     height: auto;
     justify-content: start;
+    gap: 0;
   }
 
   app-portfolio {
@@ -125,7 +175,7 @@ app-contact {
     padding: 20px 0;
   }
 
-  app-contact{
+  app-contact {
     padding: 0;
   }
 }
