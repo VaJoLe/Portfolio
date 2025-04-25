@@ -21,12 +21,12 @@ export class ContactComponent {
     privacyAccepted: false,
   };
 
-  mailTest = true;
+  mailTest = false;
 
   successMessageVisible = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://jonas-valtin.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
