@@ -164,7 +164,6 @@
     border: 2px solid #ff416c;
   }
 
-  /* Fehler: Rot bleibt auch bei Fokus */
   input[type="text"].ng-invalid.ng-dirty:focus,
   input[type="email"].ng-invalid.ng-dirty:focus,
   textarea.ng-invalid.ng-dirty:focus {
@@ -172,7 +171,6 @@
     box-shadow: none;
   }
 
-  /* Erfolgreich validiert: Grün */
   input[type="text"].ng-valid.ng-dirty,
   input[type="email"].ng-valid.ng-dirty,
   textarea.ng-valid.ng-dirty {
@@ -257,7 +255,7 @@
       width: 350px;
     }
   }
-  .shadow-contact{
+  .shadow-contact {
     width: 900px;
     height: auto;
     left: -400px;
@@ -286,17 +284,16 @@
 }
 
 @media (max-width: 1000px) {
-  .shadow-contact{
+  .shadow-contact {
     left: -400px;
     bottom: -350px;
   }
 }
 
-
 @media (max-width: 900px) {
   .contact-content {
     padding-left: 50px;
-    .goUp{
+    .goUp {
       right: 50px;
     }
   }
@@ -315,16 +312,16 @@
       margin: 0 auto;
     }
   }
-  .shadow-contact{
+  .shadow-contact {
     width: 700px;
     left: -300px;
     bottom: -300px;
   }
 }
 
-@media(max-width: 500px){
-  .contact-head{
-    h2{
+@media (max-width: 500px) {
+  .contact-head {
+    h2 {
       font-size: 50px;
     }
   }

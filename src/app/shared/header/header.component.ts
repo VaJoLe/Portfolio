@@ -13,12 +13,11 @@ export class HeaderComponent {
   isMobileMenuOpen = false;
 
   constructor(private translate: TranslateService) {
-    // Initialwert setzen
-    const current = this.translate.currentLang || this.translate.getDefaultLang() || 'de';
+    const current =
+      this.translate.currentLang || this.translate.getDefaultLang() || 'de';
     this.activeLanguage = current as 'en' | 'de';
     this.translate.use(this.activeLanguage);
 
-    // Sprachwechsel beobachten
     this.translate.onLangChange.subscribe((event) => {
       this.activeLanguage = event.lang as 'en' | 'de';
     });
@@ -33,5 +32,5 @@ export class HeaderComponent {
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }  
+  }
 }

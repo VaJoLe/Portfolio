@@ -94,12 +94,12 @@
     font-weight: normal;
 
     &:hover {
-      background-color: #1ce6b6; // Lila bei Hover
+      background-color: #1ce6b6;
       border: none;
     }
 
     &.active {
-      background-color: #4b47ff; // Grün wenn aktiv
+      background-color: #4b47ff;
       color: white;
       font-weight: bold;
     }
@@ -207,7 +207,7 @@
   }
 }
 
-// Responsive
+
 @media (max-width: 900px) {
   .desktop-nav {
     display: none;

@@ -77,11 +77,11 @@ app-project {
     width: 80%;
     margin: 0 auto;
   }
-  .shadow-skills{
+  .shadow-skills {
     width: 600px;
     height: 600px;
   }
-  .shadow-pf{
+  .shadow-pf {
     width: 600px;
     height: 600px;
   }
@@ -95,10 +95,10 @@ app-project {
   .portfolio {
     padding-right: 100px;
     .strokeRight {
-        width: 50px;
+      width: 50px;
     }
   }
-  .shadow-skills{
+  .shadow-skills {
     width: 500px;
     height: 500px;
     right: -270px;
@@ -106,19 +106,19 @@ app-project {
 }
 
 @media (max-width: 600px) {
-    .portfolio {
-      padding-right: 50px;
-    }
-    .shadow-skills{
-      width: 450px;
-      height: 450px;
-      right: -230px;
-    }
-    .shadow-pf{
-      width: 500px;
-      height: 500px;
-      top: 50%;
-    }
+  .portfolio {
+    padding-right: 50px;
+  }
+  .shadow-skills {
+    width: 450px;
+    height: 450px;
+    right: -230px;
+  }
+  .shadow-pf {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -127,7 +127,7 @@ app-project {
       font-size: 50px;
     }
   }
-  .shadow-skills{
+  .shadow-skills {
     width: 400px;
     height: 400px;
     right: -230px;

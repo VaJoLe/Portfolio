@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -17,7 +16,7 @@ export class PortfolioComponent {
 
   constructor(private translate: TranslateService) {
     this.loadTranslatedProjects();
-    // Sprache wechseln → neu laden
+
     this.translate.onLangChange.subscribe(() => this.loadTranslatedProjects());
   }
 
