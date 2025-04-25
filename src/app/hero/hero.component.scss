@@ -71,7 +71,7 @@ button {
 
 .socials {
   position: absolute;
-  top: 867px;
+  top: 90%;
   left: 0;
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@ button {
 .scroll {
   transform: rotate(90deg);
   position: absolute;
-  top: 810px;
+  bottom: 15%;
   right: 30px;
   color: white;
   display: flex;
@@ -254,9 +254,6 @@ button {
     height: 60px;
     top: 500px;
   }
-  .socials {
-    top: 750px;
-  }
   .scroll {
     display: none;
   }
@@ -329,7 +326,6 @@ button {
     height: 49px;
   }
   .socials {
-    top: 700px;
     a {
       width: 30px;
       height: 30px;

@@ -139,7 +139,7 @@ app-contact {
 
 @media (max-width: 750px) {
   app-about-me {
-    padding: 50px;
+    padding: 100px;
   }
   .vector {
     top: 1600px;
@@ -172,6 +172,7 @@ app-contact {
 
   app-about-me {
     padding: 20px;
+    padding-bottom: 100px;
     flex-direction: column-reverse;
   }
 
@@ -181,7 +182,7 @@ app-contact {
 
   app-skills {
     flex-direction: column-reverse;
-    padding: 50px 0;
+    padding-bottom: 50px;
     position: relative;
     height: auto;
     justify-content: start;
