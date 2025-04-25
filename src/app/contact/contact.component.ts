@@ -41,22 +41,21 @@ export class ContactComponent {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: (response) => {
-            this.successMessageVisible = true;
-            setTimeout(() => {
-              this.successMessageVisible = false;
-              ngForm.resetForm();
-            }, 5000);          },
-          error: (error) => {
-            console.error(error);
-          },
+          next: () => this.showSuccessAndReset(ngForm),
+          error: (error) => console.error(error),
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.successMessageVisible = true;
-      setTimeout(() => {
-        this.successMessageVisible = false;
-        ngForm.resetForm(); 
-      }, 5000);    }
+      this.showSuccessAndReset(ngForm);
+    }
   }
+  
+  private showSuccessAndReset(ngForm: NgForm) {
+    this.successMessageVisible = true;
+    setTimeout(() => {
+      this.successMessageVisible = false;
+      ngForm.resetForm();
+    }, 5000);
+  }
+  
 }

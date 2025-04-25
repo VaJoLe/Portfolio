@@ -1,35 +1,42 @@
-.imprint{
-    width: 100%;
-    max-width: 1440px;
-    height: calc(100vh - 270px);
-    color: white;
-    padding: 100px;
+.imprint {
+  width: 100%;
+  max-width: 1440px;
+  height: calc(100vh - 270px);
+  color: white;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: 1441px) {
+    width: 1440px;
+  }
+  .imprint-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    @media (min-width: 1441px) {
-        width: 1440px;
+    gap: 15px;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      text-decoration: underline;
+      color: white;
+      cursor: pointer;
     }
-    .imprint-container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    h1 {
-        font-size: 48px;
-        font-weight: 700;
-    }
-    h2 {
-        font-size: 32px;
-        font-weight: 400;
-    }
-    p {
-        font-size: 16px;
-        font-weight: 400;
-        a {
-            text-decoration: underline;
-            color: white;
-            cursor: pointer;
-        }
-    }
+  }
+}
+
+@media (max-width: 390px) {
+  .imprint {
+    padding: 100px 50px 50px 50px;
+    height: calc(100vh - 220px);
+  }
 }

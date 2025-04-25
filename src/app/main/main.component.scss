@@ -102,6 +102,9 @@ app-contact {
     padding: 0;
     padding-top: 100px;
   }
+  .vector{
+    top: 1500px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -112,6 +115,9 @@ app-contact {
   app-skills {
     flex-direction: column-reverse;
     align-items: end;
+  }
+  .vector {
+    top: 1450px;
   }
 }
 
@@ -126,11 +132,17 @@ app-contact {
   app-references {
     padding-left: 0;
   }
+  .vector {
+    top: 1600px;
+  }
 }
 
 @media (max-width: 750px) {
   app-about-me {
     padding: 50px;
+  }
+  .vector {
+    top: 1600px;
   }
 }
 
@@ -141,6 +153,15 @@ app-contact {
   app-portfolio {
     text-align: center;
     padding-top: 50px;
+  }
+  .vector {
+    top: 1400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .vector {
+    top: 1250px;
   }
 }
 
@@ -177,5 +198,8 @@ app-contact {
 
   app-contact {
     padding: 0;
+  }
+  .vector {
+    top: 1150px;
   }
 }

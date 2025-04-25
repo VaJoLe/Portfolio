@@ -89,7 +89,7 @@
     cursor: pointer;
     filter: brightness(0) saturate(100%) invert(58%) sepia(93%) saturate(965%)
       hue-rotate(146deg) brightness(89%) contrast(105%);
-    transition: transform 0.2s ease;
+    transition: transform 75ms ease;
     border-radius: 50%;
     border: 2px solid transparent;
 
@@ -108,7 +108,7 @@
       border-radius: 50%;
       background-color: #4b47ff;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 75ms;
 
       &.active {
         background-color: #1ce6b6;
@@ -132,6 +132,26 @@
       left: 40px;
     }
   }
+  .shadow-ref {
+  width: 60%;
+  height: auto;
+  top: -100px;
+  right: -400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .shadow-ref {
+    top: -70px;
+    right: -300px;
+    }
+}
+
+@media (max-width: 900px) {
+  .shadow-ref {
+    top: 20px;
+    right: -300px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -150,6 +170,11 @@
       left: 0;
     }
   }
+  .shadow-ref {
+    width: 80%;
+    top: 20px;
+    right: -30%;
+    }
 }
 
 @media (max-width: 500px) {

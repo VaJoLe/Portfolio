@@ -61,9 +61,12 @@ p {
 .shadow-pic {
   position: absolute;
   top: 100px;
-  right: 0;
-  width: 800px;
-  height: 720px;
+  right: 0%;
+    width: 55%;
+    height: auto;
+  // right: 0;
+  // width: 800px;
+  // height: 720px;
   z-index: -1;
 }
 
@@ -71,6 +74,7 @@ p {
   h2 {
     font-size: 70px;
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -80,6 +84,12 @@ p {
     .profil-pic {
       width: 80%;
     }
+  }
+  .shadow-pic{
+    width: 550px;
+    height: 520px;
+right: 50%;
+transform: translateX(50%);
   }
 }
 
@@ -97,6 +107,12 @@ p {
     .profil-pic {
       width: 100%;
     }
+  }
+  .shadow-pic{
+    width: 100%;
+    max-width: 600px;
+    height: 580px;
+    top: 5%;
   }
 }
 
@@ -120,6 +136,9 @@ p {
         width: auto;
       }
     }
+  }
+  .shadow-pic{
+    top: 0;
   }
 }
 
@@ -161,7 +180,6 @@ p {
       width: 350px;
       height: auto;
       top: 50px;
-      right: unset;
     }
   }
 }
