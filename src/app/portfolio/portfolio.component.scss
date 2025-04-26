@@ -39,25 +39,6 @@ app-project {
   }
 }
 
-.shadow-pf {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
-  left: -250px;
-  z-index: -1;
-  width: 700px;
-  height: 700px;
-}
-
-.shadow-skills {
-  position: absolute;
-  top: -20px;
-  right: -320px;
-  z-index: -1;
-  width: 700px;
-  height: 700px;
-}
-
 @media (max-width: 1200px) {
   .portfolio {
     padding-right: 200px;
@@ -77,14 +58,6 @@ app-project {
     width: 80%;
     margin: 0 auto;
   }
-  .shadow-skills {
-    width: 600px;
-    height: 600px;
-  }
-  .shadow-pf {
-    width: 600px;
-    height: 600px;
-  }
 }
 
 @media (max-width: 800px) {
@@ -98,26 +71,11 @@ app-project {
       width: 50px;
     }
   }
-  .shadow-skills {
-    width: 500px;
-    height: 500px;
-    right: -270px;
-  }
 }
 
 @media (max-width: 600px) {
   .portfolio {
     padding-right: 50px;
-  }
-  .shadow-skills {
-    width: 450px;
-    height: 450px;
-    right: -230px;
-  }
-  .shadow-pf {
-    width: 500px;
-    height: 500px;
-    top: 50%;
   }
 }
 
@@ -126,11 +84,6 @@ app-project {
     h2 {
       font-size: 50px;
     }
-  }
-  .shadow-skills {
-    width: 400px;
-    height: 400px;
-    right: -230px;
   }
 }
 
