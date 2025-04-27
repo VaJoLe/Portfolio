@@ -1,23 +1,27 @@
 <div id="skills" style="position: absolute; top: -100px"></div>
-<div class="skillsIcons">
-  <div class="skillIconBox" *ngFor="let item of imageList">
-    <img [src]="item.image" [alt]="item.title" />
-    <p>
-      {{
-        item.title === "LEARNING" ? ("SKILLS.LEARNING" | translate) : item.title
-      }}
-    </p>
+<div class="skills-content">
+  <div class="skillsIcons">
+    <div class="skillIconBox" *ngFor="let item of imageList">
+      <img [src]="item.image" [alt]="item.title" />
+      <p>
+        {{
+          item.title === "LEARNING"
+            ? ("SKILLS.LEARNING" | translate)
+            : item.title
+        }}
+      </p>
+    </div>
   </div>
-</div>
-<div class="skillsText">
-  <div class="skillsTextTitle">
-    <h2>{{ "SKILLS.TITLE" | translate }}</h2>
-    <div class="strokeSkills"></div>
-  </div>
-  <div class="skillsTextContent">
-    <p [innerHTML]="'SKILLS.DESCRIPTION' | translate"></p>
-    <a href="#contact">
-      <button>{{ "SKILLS.BUTTON" | translate }}</button>
-    </a>
+  <div class="skillsText">
+    <div class="skillsTextTitle">
+      <h2>{{ "SKILLS.TITLE" | translate }}</h2>
+      <div class="strokeSkills"></div>
+    </div>
+    <div class="skillsTextContent">
+      <p [innerHTML]="'SKILLS.DESCRIPTION' | translate"></p>
+      <a href="#contact">
+        <button>{{ "SKILLS.BUTTON" | translate }}</button>
+      </a>
+    </div>
   </div>
 </div>

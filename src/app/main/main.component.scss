@@ -1,33 +1,25 @@
 div {
   position: relative;
   overflow: hidden;
-  @media (min-width: 1441px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+
 }
 
 app-hero {
   width: 100%;
-  max-width: 1440px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   z-index: 1;
 }
 
 app-about-me {
   width: 100%;
-  max-width: 1440px;
   height: auto;
-  min-height: 770px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 100px 100px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -36,47 +28,40 @@ app-about-me {
 
 app-skills {
   width: 100%;
-  max-width: 1440px;
   height: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
   position: relative;
   z-index: 1;
-  gap: 50px;
 }
 
 .vector {
   position: absolute;
-  top: 1600px;
+  top: 100%;
+  transform: translateY(150%);
   width: 100%;
-  max-width: 1440px;
   z-index: 0;
 }
 
 app-portfolio {
-  display: inline-block;
   width: 100%;
-  max-width: 1440px;
   height: auto;
-  padding-top: 100px;
   position: relative;
   z-index: 1;
-  color: white;
-  overflow: hidden;
+  padding-top: 250px;
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 }
 
 app-references {
-  display: inline-block;
   width: 100%;
-  max-width: 1440px;
   height: auto;
-  padding-left: 100px;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  display: flex;
+  justify-content: center;
   z-index: 1;
   position: relative;
-  overflow: hidden;
 }
 
 app-contact {
@@ -91,31 +76,22 @@ app-contact {
   overflow: hidden;
 }
 
-@media (max-width: 1400px) {
-  app-about-me {
-    align-items: flex-start;
+@media (max-width: 1440px) {
+  app-portfolio {
+    padding-top: 100px;
   }
 }
 
+
+
 @media (max-width: 1200px) {
-  app-references {
-    padding: 0;
-    padding-top: 100px;
-  }
+
   .vector {
     top: 1500px;
   }
 }
 
 @media (max-width: 1000px) {
-  app-about-me {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  app-skills {
-    flex-direction: column-reverse;
-    align-items: end;
-  }
   .vector {
     top: 1450px;
   }
@@ -129,27 +105,19 @@ app-contact {
 }
 
 @media (max-width: 800px) {
-  app-references {
-    padding-left: 0;
-  }
+  
   .vector {
     top: 1600px;
   }
 }
 
 @media (max-width: 750px) {
-  app-about-me {
-    padding: 100px;
-  }
   .vector {
     top: 1600px;
   }
 }
 
 @media (max-width: 600px) {
-  app-hero {
-    height: 850px;
-  }
   app-portfolio {
     text-align: center;
     padding-top: 50px;
@@ -170,32 +138,15 @@ app-contact {
     height: 820px;
   }
 
-  app-about-me {
-    padding: 20px;
-    padding-bottom: 100px;
-    flex-direction: column-reverse;
-  }
-
   .vector {
     top: 980px;
-  }
-
-  app-skills {
-    flex-direction: column-reverse;
-    padding-bottom: 50px;
-    position: relative;
-    height: auto;
-    justify-content: start;
-    gap: 0;
   }
 
   app-portfolio {
     padding: 50px 0;
   }
 
-  app-references {
-    padding: 20px 0;
-  }
+  
 
   app-contact {
     padding: 0;

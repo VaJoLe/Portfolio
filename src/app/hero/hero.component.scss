@@ -1,5 +1,6 @@
 .hero-content {
-  width: auto;
+  width: 100%;
+  max-width: 1440px;
   height: auto;
   position: absolute;
   top: 297px;
@@ -8,6 +9,7 @@
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .i-am {
@@ -70,9 +72,11 @@ button {
 }
 
 .socials {
-  position: absolute;
-  top: 90%;
-  left: 0;
+  width: auto;
+  position: absolute; 
+  bottom: 10%;  
+  right: 50%;
+  transform: translateX(-8%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,16 +101,16 @@ button {
 }
 
 .stroke-hero {
-  width: 100px;
+  width: 5000px;
   height: 4px;
   background-color: #4b47ff;
 }
 
 .scroll {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translate(0, -2000%);
   position: absolute;
-  bottom: 15%;
-  right: 30px;
+  top: 85%;
+  right: 50%;
   color: white;
   display: flex;
   justify-content: center;
@@ -129,7 +133,8 @@ button {
 .shadow-top-left {
   position: absolute;
   top: 120px;
-  left: -250px;
+  left: 50%;
+  transform: translateX(-140%);
   width: 700px;
   height: 730px;
   z-index: -1;
@@ -138,10 +143,30 @@ button {
 .shadow-top-right {
   position: absolute;
   top: 20px;
-  right: -400px;
+  right: 50%;
+  transform: translateX(160%);
   width: 700px;
   height: 800px;
   z-index: -1;
+}
+
+@media (max-width: 1440px) {
+  .socials {
+    width: unset;
+    left: 0;
+    right: unset;
+    transform: translateX(0);
+  }
+  .stroke-hero {
+    flex: unset;
+    width: 100px;
+  }
+  .scroll {
+    top: unset;
+    bottom: 15%;
+    right: 30px;
+    transform: rotate(90deg) translate(0, 0);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -168,11 +193,14 @@ button {
   .shadow-top-left {
     width: 600px;
     height: 630px;
+    top: 130px;
+    transform: translateX(-130%);
   }
   .shadow-top-right {
     width: 600px;
     height: 700px;
     top: 40px;
+    transform: translateX(150%);
   }
 }
 
@@ -193,12 +221,12 @@ button {
   .shadow-top-left {
     width: 550px;
     height: 580px;
+    transform: translateX(-125%);
   }
   .shadow-top-right {
     width: 550px;
     height: 650px;
-    right: -350px;
-    top: 90px;
+    top: 70px;
   }
 }
 
@@ -221,12 +249,13 @@ button {
   .shadow-top-left {
     width: 500px;
     height: 530px;
+    transform: translateX(-120%);
   }
   .shadow-top-right {
     width: 500px;
     height: 600px;
-    right: -300px;
-    top: 120px;
+    top: 80px;
+    transform: translateX(135%);
   }
 }
 
@@ -260,12 +289,14 @@ button {
   .shadow-top-left {
     width: 400px;
     height: 430px;
-    left: -220px;
+    top: 100px;
+    transform: translateX(-110%);
   }
   .shadow-top-right {
     width: 400px;
     height: 500px;
-    right: -250px;
+    top: 50px;
+    transform: translateX(130%);
   }
 }
 
@@ -282,13 +313,14 @@ button {
   .shadow-top-left {
     width: 300px;
     height: 330px;
-    left: -180px;
+    top: 140px;
+    transform: translateX(-120%);
   }
   .shadow-top-right {
     width: 300px;
     height: 400px;
-    right: -200px;
-    top: 160px;
+    top: 100px;
+    transform: translateX(140%);
   }
 }
 
@@ -337,12 +369,13 @@ button {
   .shadow-top-left {
     width: 300px;
     height: 400px;
-    left: -150px;
+    top: 130px;
+    transform: translateX(-110%);
   }
   .shadow-top-right {
     width: 300px;
     height: 400px;
-    top: 250px;
-    right: -180px;
+    top: 150px;
+    transform: translateX(135%);
   }
 }

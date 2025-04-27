@@ -1,3 +1,12 @@
+.skills-content{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
 .skillsIcons {
   width: 600px;
   height: 600px;
@@ -64,6 +73,8 @@
 }
 
 .skillsTextTitle {
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -81,7 +92,9 @@
 }
 
 .skillsTextContent {
+  width: 550px;
   height: auto;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
   gap: 23px;
@@ -106,6 +119,18 @@
 
 :host.lang-de .skillsTextContent button {
   width: 300px;
+  padding-top: unset;
+}
+
+@media (max-width: 1440px) {
+  .skillsTextTitle{
+    position: unset;
+  width: unset;
+  }
+  .skillsTextContent{
+    width: unset;
+    padding-top: unset;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -134,6 +159,10 @@
 }
 
 @media (max-width: 1000px) {
+  .skills-content{
+    flex-direction: column-reverse;
+    align-items: end;
+  }
   .skillsIcons {
     margin: 0 auto;
     width: 515px;
@@ -234,7 +263,14 @@
 }
 
 @media (max-width: 390px) {
-  
+ .skills-content{
+  flex-direction: column-reverse;
+    padding-bottom: 50px;
+    position: relative;
+    height: auto;
+    justify-content: start;
+    gap: 0;
+ } 
 
   .skillsText {
     width: 100%;

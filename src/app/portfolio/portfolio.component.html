@@ -4,21 +4,23 @@
   <h2>{{ "PORTFOLIO.TITLE" | translate }}</h2>
   <div class="strokeRight"></div>
 </div>
-<div class="portfolio-intro">
-  <p>{{ portfolioIntro }}</p>
-</div>
+<div class="portfolio-content">
+  <div class="portfolio-intro">
+    <p>{{ portfolioIntro }}</p>
+  </div>
 
-<div *ngFor="let project of projects; let i = index">
-  <app-project
-    [title]="project.title"
-    [techStack]="project.techStack"
-    [description]="project.description"
-    [liveUrl]="project.liveUrl"
-    [githubUrl]="project.githubUrl"
-    [imageUrl]="project.imageUrl"
-    [reversed]="i % 2 !== 0"
-  >
-  </app-project>
+  <div *ngFor="let project of projects; let i = index">
+    <app-project
+      [title]="project.title"
+      [techStack]="project.techStack"
+      [description]="project.description"
+      [liveUrl]="project.liveUrl"
+      [githubUrl]="project.githubUrl"
+      [imageUrl]="project.imageUrl"
+      [reversed]="i % 2 !== 0"
+    >
+    </app-project>
+  </div>
 </div>
 
 <img class="shadow-pf" src="/assets/shadows/shadow-portfolio.svg" alt="" />
