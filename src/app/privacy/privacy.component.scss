@@ -2,8 +2,9 @@
   width: 100%;
   max-width: 1440px;
   height: auto;
+  min-height: calc(100vh - 270px);
   color: white;
-  padding: 100px;
+  padding: 110px 100px 100px 100px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

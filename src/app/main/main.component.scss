@@ -95,14 +95,29 @@ app-contact {
   .shadow-ref {
     transform: rotate(251deg) translate(-40%, 115%);
   }
+  .vector{
+    top: calc(100vh + 12%);
+  }
 }
 
 @media (max-width: 1000px) {
   .vector {
-    top: calc(100vh + 8%);
+    top: calc(100vh + 6%);
   }
   .shadow-ref {
     transform: rotate(251deg) translate(-40%, 100%);
+  }
+}
+
+@media (max-width: 950px) {
+  .vector {
+    top: calc(100vh + 5%);
+  }
+}
+
+@media (max-width: 900px) {
+  .vector {
+    top: calc(100vh + 5.5%);
   }
 }
 
@@ -110,17 +125,20 @@ app-contact {
   .shadow-ref {
     transform: rotate(251deg) translate(10%, 100%);
   }
+  .vector {
+    top: calc(100vh + 6.5%);
+  }
 }
 
 @media (max-width: 700px) {
   .vector {
-    top: calc(100vh + 6%);
+    top: calc(100vh + 6.5%);
   }
 }
 
 @media (max-width: 600px) {
   .vector {
-    top: calc(100vh + 7%);
+    top: calc(100vh + 5.7%);
   }
 }
 
@@ -132,12 +150,18 @@ app-contact {
     transform: rotate(251deg) translate(10%, 90%);
   }
   .vector {
-    top: calc(100vh + 6%);
+    top: calc(100vh + 5.3%);
+  }
+}
+
+@media (max-width: 450px) {
+  .vector {
+    top: calc(100vh + 5%);
   }
 }
 
 @media (max-width: 390px) {
   .vector {
-    top: calc(100vh + 5%);
+    top: calc(100vh + 4%);
   }
 }

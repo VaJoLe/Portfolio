@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -9,8 +9,12 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss',
 })
-export class PrivacyComponent {
-  ngOnInit(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+export class PrivacyComponent implements AfterViewInit{
+  ngAfterViewInit() {
+    if ('scrollBehavior' in document.documentElement.style) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }
 }

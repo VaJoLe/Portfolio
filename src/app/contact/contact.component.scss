@@ -96,6 +96,8 @@
         color: white;
 
         input[type="checkbox"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
           appearance: none;
           width: 18px;
           height: 18px;
@@ -103,21 +105,17 @@
           border-radius: 2px;
           background-color: transparent;
           cursor: pointer;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
           position: relative;
           transition: all 75ms ease;
 
           &:checked {
-            background-color: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &::after {
-              content: "✔";
-              font-size: 14px;
-              color: #4b47ff;
-            }
+            background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23ffffff" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 14px 14px;
           }
         }
 
@@ -172,30 +170,18 @@
     }
   }
 
-  input#name.ng-invalid.ng-dirty:not(:placeholder-shown),
-  input#email.ng-invalid.ng-dirty:not(:placeholder-shown),
-  textarea#message.ng-invalid.ng-dirty:not(:placeholder-shown) {
+  input#name.ng-invalid.ng-touched:not(:placeholder-shown),
+  input#email.ng-invalid.ng-touched:not(:placeholder-shown),
+  textarea#message.ng-invalid.ng-touched:not(:placeholder-shown) {
     border: 2px solid #ff416c;
     transition: border-color 0.3s ease;
   }
 
-  input#name.ng-invalid.ng-dirty:focus,
-  input#email.ng-invalid.ng-dirty:focus,
-  textarea#message.ng-invalid.ng-dirty:focus {
-    border: 2px solid #ff416c !important;
-  }
-
-  input#name.ng-valid.ng-dirty,
-  input#email.ng-valid.ng-dirty,
-  textarea#message.ng-valid.ng-dirty {
+  input#name.ng-valid.ng-touched,
+  input#email.ng-valid.ng-touched,
+  textarea#message.ng-valid.ng-touched {
     border: 2px solid #00c896;
     transition: border-color 0.3s ease;
-  }
-
-  input#name.ng-valid.ng-dirty:focus,
-  input#email.ng-valid.ng-dirty:focus,
-  textarea#message.ng-valid.ng-dirty:focus {
-    border: 2px solid #00c896;
   }
 
   .error-message {
