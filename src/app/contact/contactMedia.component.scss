@@ -10,6 +10,10 @@
       flex: unset;
     }
   }
+  .goUp{
+    transform: translateX(0);
+    right: 100px;
+  }
   .shadow-contact {
     left: -500px;
     transform: translateX(0);
