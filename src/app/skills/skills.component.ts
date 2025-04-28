@@ -7,54 +7,53 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, NgFor, TranslateModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
   imageList: { title: string; image: string }[] = [
     {
       title: 'HTML',
-      image: '/assets/skills/html.png'
+      image: '/assets/skills/html.png',
     },
     {
       title: 'CSS',
-      image: '/assets/skills/CSS.png'
+      image: '/assets/skills/CSS.png',
     },
     {
       title: 'JavaScript',
-      image: '/assets/skills/Js.png'
+      image: '/assets/skills/Js.png',
     },
     {
       title: 'TypeScript',
-      image: '/assets/skills/Ts.png'
+      image: '/assets/skills/Ts.png',
     },
     {
       title: 'Angular',
-      image: '/assets/skills/Angular.png'
+      image: '/assets/skills/Angular.png',
     },
     {
       title: 'Firebase',
-      image: '/assets/skills/Firebase.png'
+      image: '/assets/skills/Firebase.png',
     },
     {
       title: 'Git',
-      image: '/assets/skills/Git.png'
+      image: '/assets/skills/Git.png',
     },
     {
       title: 'Rest API',
-      image: '/assets/skills/API.png'
+      image: '/assets/skills/API.png',
     },
     {
       title: 'Scrum',
-      image: '/assets/skills/Scrum.png'
+      image: '/assets/skills/Scrum.png',
     },
     {
       title: 'Material Design',
-      image: '/assets/skills/MD.png'
+      image: '/assets/skills/MD.png',
     },
     {
       title: 'LEARNING',
-      image: '/assets/skills/Interest.png'
-    }
- ];
-
-  }
+      image: '/assets/skills/Interest.png',
+    },
+  ];
+}

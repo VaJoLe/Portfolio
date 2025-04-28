@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+  styleUrls: ['./contact.component.scss', './contactMedia.component.scss'],
 })
 export class ContactComponent {
   http = inject(HttpClient);
@@ -50,7 +50,7 @@ export class ContactComponent {
       this.showSuccessAndReset(ngForm);
     }
   }
-  
+
   private showSuccessAndReset(ngForm: NgForm) {
     this.successMessageVisible = true;
     setTimeout(() => {
@@ -58,5 +58,4 @@ export class ContactComponent {
       ngForm.resetForm();
     }, 5000);
   }
-  
 }

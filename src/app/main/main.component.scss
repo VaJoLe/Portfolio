@@ -1,15 +1,15 @@
 div {
   position: relative;
   overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 app-hero {
   width: 100%;
   height: 100vh;
+  min-height: 600px;
   position: relative;
   z-index: 1;
 }
@@ -37,8 +37,7 @@ app-skills {
 
 .vector {
   position: absolute;
-  top: 100%;
-  transform: translateY(150%);
+  top: calc(100vh + 11%);
   width: 100%;
   z-index: 0;
 }
@@ -50,9 +49,9 @@ app-portfolio {
   z-index: 1;
   padding-top: 250px;
   display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 app-references {
@@ -66,92 +65,79 @@ app-references {
 
 app-contact {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  max-width: 1440px;
   height: auto;
-  padding: 0 100px 150px 0;
+  padding-top: 150px;
   z-index: 1;
   position: relative;
   overflow: hidden;
+}
+
+.shadow-ref {
+  position: absolute;
+  bottom: 450px;
+  right: 50%;
+  transform: rotate(251deg) translate(-30%, 120%);
+  z-index: -1;
 }
 
 @media (max-width: 1440px) {
   app-portfolio {
     padding-top: 100px;
   }
+  app-contact {
+    padding-top: unset;
+  }
 }
 
-
-
 @media (max-width: 1200px) {
-
-  .vector {
-    top: 1500px;
+  .shadow-ref {
+    transform: rotate(251deg) translate(-40%, 115%);
   }
 }
 
 @media (max-width: 1000px) {
   .vector {
-    top: 1450px;
+    top: calc(100vh + 8%);
   }
-}
-
-@media (max-width: 900px) {
-  app-contact {
-    padding-right: 50px;
-    padding-bottom: 100px;
+  .shadow-ref {
+    transform: rotate(251deg) translate(-40%, 100%);
   }
 }
 
 @media (max-width: 800px) {
-  
-  .vector {
-    top: 1600px;
+  .shadow-ref {
+    transform: rotate(251deg) translate(10%, 100%);
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .vector {
-    top: 1600px;
+    top: calc(100vh + 6%);
   }
 }
 
 @media (max-width: 600px) {
-  app-portfolio {
-    text-align: center;
-    padding-top: 50px;
-  }
   .vector {
-    top: 1400px;
+    top: calc(100vh + 7%);
   }
 }
 
 @media (max-width: 500px) {
+  .shadow-ref {
+    width: 600px;
+    height: 700px;
+    bottom: 800px;
+    transform: rotate(251deg) translate(10%, 90%);
+  }
   .vector {
-    top: 1250px;
+    top: calc(100vh + 6%);
   }
 }
 
 @media (max-width: 390px) {
-  app-hero {
-    height: 820px;
-  }
-
   .vector {
-    top: 980px;
-  }
-
-  app-portfolio {
-    padding: 50px 0;
-  }
-
-  
-
-  app-contact {
-    padding: 0;
-  }
-  .vector {
-    top: 1150px;
+    top: calc(100vh + 5%);
   }
 }

@@ -4,9 +4,10 @@
   height: calc(100vh - 270px);
   color: white;
   padding: 100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   @media (min-width: 1441px) {
     width: 1440px;
   }
@@ -34,9 +35,18 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 550px) {
   .imprint {
     padding: 100px 50px 50px 50px;
-    height: calc(100vh - 220px);
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .imprint {
+    height: auto;
+    min-height: calc(100vh - 220px);
   }
 }

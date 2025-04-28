@@ -1,4 +1,4 @@
-.portfolio-content{
+.portfolio-content {
   max-width: 1440px;
   color: white;
 }
@@ -35,8 +35,8 @@ app-project {
     background-color: #4b47ff;
   }
   .strokeLeft {
-width: 5000px;   
-height: 4px;
+    width: 5000px;
+    height: 4px;
     background-color: #4b47ff;
   }
 }
@@ -71,8 +71,8 @@ height: 4px;
   height: 700px;
 }
 
-@media(max-width: 1440px){
-  .portfolio{
+@media (max-width: 1440px) {
+  .portfolio {
     width: 100%;
     position: unset;
     transform: translateX(0);
@@ -137,12 +137,15 @@ height: 4px;
     height: 500px;
     transform: translateX(125%);
   }
-  .shadow-pf{
+  .shadow-pf {
     transform: translateX(-110%);
   }
 }
 
 @media (max-width: 600px) {
+  .portfolio-content {
+    text-align: center;
+  }
   .portfolio {
     padding-right: 50px;
   }
@@ -163,7 +166,7 @@ height: 4px;
       font-size: 50px;
     }
   }
- 
+
   .shadow-skills {
     width: 400px;
     height: 400px;

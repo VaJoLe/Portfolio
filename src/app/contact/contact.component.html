@@ -1,108 +1,115 @@
 <div id="contact" style="position: absolute; top: -100px"></div>
-
-<div class="contact-head">
-  <div class="contact-stroke"></div>
-  <h2>{{ "CONTACT.TITLE" | translate }}</h2>
-</div>
-
-<div class="contact-content">
-  <div class="left">
-    <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
-    <p>{{ "CONTACT.DESCRIPTION" | translate }}</p>
-    <p>
-      {{ "CONTACT.CALLTOACTION" | translate }}
-      <span>{{ "CONTACT.CONTACTME" | translate }}</span>
-    </p>
+<div class="contact">
+  <div class="contact-head">
+    <div class="contact-stroke"></div>
+    <h2>{{ "CONTACT.TITLE" | translate }}</h2>
   </div>
-  <div class="right">
-    <form
-      class="contact-form"
-      (ngSubmit)="onSubmit(contactForm)"
-      #contactForm="ngForm"
-      autocomplete="off"
-    >
-      <div>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          #name="ngModel"
-          placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}"
-          [(ngModel)]="contactData.name"
-          required
-          pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄäÖöÜüß\-'\s]{2,50}$"
-        />
-        @if (!name.valid && name.dirty && name.value) {
-        <div class="error-message">{{ "CONTACT.ERROR_NAME" | translate }}</div>
-        }
-      </div>
-      <div>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          #email="ngModel"
-          placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}"
-          [(ngModel)]="contactData.email"
-          required
-          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-        />
-        @if (!email.valid && email.dirty && email.value) {
-        <div class="error-message">{{ "CONTACT.ERROR_EMAIL" | translate }}</div>
-        }
-      </div>
-      <div>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}"
-          #message="ngModel"
-          [(ngModel)]="contactData.message"
-          rows="6"
-          required
-          minlength="5"
-        ></textarea>
-        @if (!message.valid && message.dirty && message.value) {
-        <div class="error-message">
-          {{ "CONTACT.ERROR_MESSAGE" | translate }}
-        </div>
-        }
-      </div>
-      <div class="checkbox">
-        <div class="checkbox-row">
-          <input
-            type="checkbox"
-            id="privacy"
-            name="privacy"
-            [(ngModel)]="contactData.privacyAccepted"
-            required
-            #privacy="ngModel"
-          />
-          <label for="privacy">
-            {{ "CONTACT.PRIVACY_TEXT1" | translate }}
-            <a routerLink="/privacy">{{ "CONTACT.PRIVACY_LINK" | translate }}</a>
-            {{ "CONTACT.PRIVACY_TEXT2" | translate }}
-          </label>
-        </div>
-        @if (!privacy.valid && privacy.touched) {
-        <div class="error-message">
-          {{ "CONTACT.ERROR_PRIVACY" | translate }}
-        </div>
-        }
-      </div>
-      <div class="button">
-        <button type="submit" [disabled]="!contactForm.valid">
-          {{ "CONTACT.BUTTON" | translate }}
-        </button>
-      </div>
-    </form>
-    <div class="success-popup" *ngIf="successMessageVisible">
-      {{ "CONTACT.SUCCESS" | translate }}
+
+  <div class="contact-content">
+    <div class="left">
+      <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
+      <p>{{ "CONTACT.DESCRIPTION" | translate }}</p>
+      <p>
+        {{ "CONTACT.CALLTOACTION" | translate }}
+        <span>{{ "CONTACT.CONTACTME" | translate }}</span>
+      </p>
     </div>
-  </div>
+    <div class="right">
+      <form
+        class="contact-form"
+        (ngSubmit)="onSubmit(contactForm)"
+        #contactForm="ngForm"
+        autocomplete="off"
+      >
+        <div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            #name="ngModel"
+            placeholder="{{ 'CONTACT.PLACEHOLDER_NAME' | translate }}"
+            [(ngModel)]="contactData.name"
+            required
+            pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄäÖöÜüß\-'\s]{2,50}$"
+          />
+          @if (!name.valid && name.dirty && name.value) {
+          <div class="error-message">
+            {{ "CONTACT.ERROR_NAME" | translate }}
+          </div>
+          }
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            #email="ngModel"
+            placeholder="{{ 'CONTACT.PLACEHOLDER_EMAIL' | translate }}"
+            [(ngModel)]="contactData.email"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          @if (!email.valid && email.dirty && email.value) {
+          <div class="error-message">
+            {{ "CONTACT.ERROR_EMAIL" | translate }}
+          </div>
+          }
+        </div>
+        <div>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="{{ 'CONTACT.PLACEHOLDER_MESSAGE' | translate }}"
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            rows="6"
+            required
+            minlength="5"
+          ></textarea>
+          @if (!message.valid && message.dirty && message.value) {
+          <div class="error-message">
+            {{ "CONTACT.ERROR_MESSAGE" | translate }}
+          </div>
+          }
+        </div>
+        <div class="checkbox">
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="privacy"
+              name="privacy"
+              [(ngModel)]="contactData.privacyAccepted"
+              required
+              #privacy="ngModel"
+            />
+            <label for="privacy">
+              {{ "CONTACT.PRIVACY_TEXT1" | translate }}
+              <a routerLink="/privacy">{{
+                "CONTACT.PRIVACY_LINK" | translate
+              }}</a>
+              {{ "CONTACT.PRIVACY_TEXT2" | translate }}
+            </label>
+          </div>
+          @if (!privacy.valid && privacy.touched) {
+          <div class="error-message">
+            {{ "CONTACT.ERROR_PRIVACY" | translate }}
+          </div>
+          }
+        </div>
+        <div class="button">
+          <button type="submit" [disabled]="!contactForm.valid">
+            {{ "CONTACT.BUTTON" | translate }}
+          </button>
+        </div>
+      </form>
+      <div class="success-popup" *ngIf="successMessageVisible">
+        {{ "CONTACT.SUCCESS" | translate }}
+      </div>
+    </div>
 
-  <a class="goUp" href="#start"
-    ><img src="/assets/icons/arrow-goUp.png" alt="Go to hero section"
-  /></a>
+    <a class="goUp" href="#start"
+      ><img src="/assets/icons/arrow-goUp.png" alt="Go to hero section"
+    /></a>
+  </div>
 </div>
 <img class="shadow-contact" src="/assets/shadows/shadow-contact.svg" alt="" />

@@ -1,9 +1,9 @@
-.references-content{
+.references-content {
   width: 100%;
   max-width: 1440px;
   padding-left: 100px;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .reference-wrapper {
@@ -13,18 +13,6 @@
   align-items: center;
   gap: 32px;
   padding: 32px 0;
-
-  .quote-icon {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-700%);
-    width: 97px;
-    height: 68px;
-    z-index: 2;
-    filter: brightness(0) saturate(100%) invert(24%) sepia(78%) saturate(5525%)
-      hue-rotate(241deg) brightness(103%) contrast(99%);
-  }
 
   .quote-box {
     display: flex;
@@ -130,41 +118,45 @@
   }
 }
 
-// shatten in main verschieben
-
-.shadow-ref {
+.quote-icon {
   position: absolute;
-  top: -70px;
-  right: 50%;
-  z-index: -1;
-  transform: rotate(251deg);
+  top: 100px;
+  left: 50%;
+  transform: translateX(-700%);
+  width: 97px;
+  height: 68px;
+  z-index: 2;
+  filter: brightness(0) saturate(100%) invert(24%) sepia(78%) saturate(5525%)
+    hue-rotate(241deg) brightness(103%) contrast(99%);
 }
 
-@media (max-width: 1440px){
-  .reference-wrapper{
+@media (max-width: 1440px) {
+  .reference-wrapper {
     position: relative;
     justify-content: flex-end;
-    .quote-icon{
-      top: 0;
-      left: 10px;
-    }
-    .imgBox{
+
+    .imgBox {
       position: unset;
-    width: unset;
-    left: unset;
+      width: unset;
+      left: unset;
+      transform: translateX(0);
+      .authorStroke {
+        width: 104px;
+        flex: unset;
+      }
+    }
+  }
+
+  .quote-icon {
     transform: translateX(0);
-    .authorStroke{
-      width: 104px;
-      flex: unset;
-    }
-    }
+    top: 100px;
+    left: 50px;
   }
 }
 
 @media (max-width: 1200px) {
-  .references-content{
-    padding: 0;
-    padding-top: 100px;
+  .references-content {
+    padding: 100px 0;
   }
   .reference-wrapper {
     padding-left: 100px;
@@ -172,30 +164,10 @@
       left: 40px;
     }
   }
-  .shadow-ref {
-  width: 60%;
-  height: auto;
-  top: -100px;
-  right: -400px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .shadow-ref {
-    top: -70px;
-    right: -300px;
-    }
-}
-
-@media (max-width: 900px) {
-  .shadow-ref {
-    top: 20px;
-    right: -300px;
-    }
 }
 
 @media (max-width: 800px) {
-  .references-content{
+  .references-content {
     padding-left: 0;
   }
   .reference-wrapper {
@@ -213,11 +185,12 @@
       left: 0;
     }
   }
-  .shadow-ref {
-    width: 80%;
-    top: 20px;
-    right: -30%;
-    }
+  .quote-icon {
+    top: 420px;
+    left: 0;
+    width: 77px;
+    height: 48px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -227,25 +200,19 @@
         width: 200px;
       }
     }
-    .quote-icon {
-      top: 220px;
-    }
+  }
+  .quote-icon {
+    top: 330px;
   }
 }
 
-
 @media (max-width: 390px) {
-  .references-content{
+  .references-content {
     padding: 20px 0;
   }
   .reference-wrapper {
     flex-direction: column-reverse;
     gap: 20px;
-    .quote-icon {
-      width: 60px;
-      height: auto;
-      top: 175px;
-    }
     .quote-box {
       width: 300px;
       height: 380px;
@@ -290,5 +257,8 @@
         height: 8px;
       }
     }
+  }
+  .quote-icon {
+    top: 190px;
   }
 }

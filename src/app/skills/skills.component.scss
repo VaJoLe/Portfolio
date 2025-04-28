@@ -1,4 +1,4 @@
-.skills-content{
+.skills-content {
   width: 100%;
   max-width: 1440px;
   display: flex;
@@ -123,11 +123,11 @@
 }
 
 @media (max-width: 1440px) {
-  .skillsTextTitle{
+  .skillsTextTitle {
     position: unset;
-  width: unset;
+    width: unset;
   }
-  .skillsTextContent{
+  .skillsTextContent {
     width: unset;
     padding-top: unset;
   }
@@ -159,7 +159,7 @@
 }
 
 @media (max-width: 1000px) {
-  .skills-content{
+  .skills-content {
     flex-direction: column-reverse;
     align-items: end;
   }
@@ -173,12 +173,12 @@
     .skillsTextTitle {
       padding-left: 30%;
     }
-    
+
     .skillsTextContent {
       width: 515px;
       margin: 0 auto;
       padding: 0;
-      
+
       a {
         margin: 0 auto;
       }
@@ -189,34 +189,34 @@
   }
 }
 
-@media (max-width: 700px){
-    :host-context(.lang-de) .skillsTextTitle {
-      padding-left: 15%;
-    }
+@media (max-width: 700px) {
+  :host-context(.lang-de) .skillsTextTitle {
+    padding-left: 15%;
+  }
 }
 
 @media (max-width: 600px) {
   .skillsIcons {
     width: 80%;
   }
-  .skillsText{
-  .skillsTextContent {
-    width: 80%;
+  .skillsText {
+    .skillsTextContent {
+      width: 80%;
+    }
   }
-}
 }
 
 @media (max-width: 550px) {
   :host-context(.lang-de) .skillsTextTitle {
     h2 {
       font-size: 50px;
-        line-height: 60px;
+      line-height: 60px;
     }
   }
 }
 
-@media (max-width: 500px){
-  .skillsIcons{
+@media (max-width: 500px) {
+  .skillsIcons {
     width: 90%;
     .skillIconBox {
       width: 90px;
@@ -229,8 +229,8 @@
       }
     }
   }
-  .skillsText{
-    .skillsTextTitle{
+  .skillsText {
+    .skillsTextTitle {
       h2 {
         font-size: 50px;
         line-height: 60px;
@@ -239,7 +239,7 @@
   }
 }
 
-@media(max-width: 450px){
+@media (max-width: 450px) {
   .skillsIcons {
     width: 100%;
     height: auto;
@@ -263,14 +263,14 @@
 }
 
 @media (max-width: 390px) {
- .skills-content{
-  flex-direction: column-reverse;
+  .skills-content {
+    flex-direction: column-reverse;
     padding-bottom: 50px;
     position: relative;
     height: auto;
     justify-content: start;
     gap: 0;
- } 
+  }
 
   .skillsText {
     width: 100%;
@@ -288,19 +288,19 @@
       p {
         padding: 0 20px;
       }
-    a{
-      margin: 0;
-      button {
-        width: 158px;
-        height: 49px;
-        font-size: 16px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+      a {
+        margin: 0;
+        button {
+          width: 158px;
+          height: 49px;
+          font-size: 16px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
     }
-  }
   }
   :host-context(.lang-de) .skillsText {
     width: 100%;

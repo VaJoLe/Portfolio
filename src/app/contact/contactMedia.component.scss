@@ -1,0 +1,160 @@
+@media (max-width: 1440px) {
+  .contact-head {
+    width: unset;
+    position: unset;
+    top: unset;
+    right: unset;
+    transform: translateX(0);
+    .contact-stroke {
+      width: 535px;
+      flex: unset;
+    }
+  }
+  .shadow-contact {
+    left: -500px;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1300px) {
+  .contact-head {
+    gap: 15px;
+    padding-right: 20%;
+    .contact-stroke {
+      flex: 1;
+    }
+  }
+  .contact-content {
+    gap: 20px;
+    .left {
+      width: 350px;
+    }
+  }
+  .shadow-contact {
+    width: 900px;
+    height: auto;
+    left: -400px;
+    bottom: -300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-head {
+    h2 {
+      font-size: 70px;
+    }
+  }
+  .contact-content {
+    .right {
+      .contact-form {
+        .checkbox-row {
+          align-items: center;
+          label {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .shadow-contact {
+    left: -400px;
+    bottom: -350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding-right: 50px;
+    padding-bottom: 100px;
+  }
+  .contact-content {
+    padding-left: 50px;
+    .goUp {
+      right: 50px;
+      bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-content {
+    flex-direction: column;
+    .left {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .right {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .shadow-contact {
+    width: 700px;
+    left: -300px;
+    bottom: -300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-head {
+    h2 {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .contact {
+    padding: 0;
+  }
+  .contact-head {
+    gap: 15px;
+    .contact-stroke {
+      width: 50px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .contact-content {
+    padding: 20px 20px 50px 20px;
+    flex-direction: column;
+    gap: 20px;
+    .left {
+      width: 100%;
+      h3 {
+        font-size: 23px;
+      }
+    }
+    .right {
+      form {
+        width: 100%;
+      }
+      .checkbox-row {
+        align-items: center;
+        label {
+          flex: 1;
+        }
+      }
+      .button {
+        button {
+          width: auto;
+          height: auto;
+          padding: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .goUp {
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

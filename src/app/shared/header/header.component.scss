@@ -211,7 +211,6 @@
   }
 }
 
-
 @media (max-width: 900px) {
   .desktop-nav {
     display: none;
@@ -222,13 +221,13 @@
   }
 }
 
-@media (max-width: 600px){
-  .header-container{
+@media (max-width: 600px) {
+  .header-container {
     padding: 37px 50px;
   }
 }
 
-@media (max-width: 390px){
+@media (max-width: 390px) {
   .header-container {
     padding: 20px 20px;
     height: auto;
