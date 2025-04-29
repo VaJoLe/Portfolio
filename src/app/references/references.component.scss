@@ -154,6 +154,17 @@
   }
 }
 
+@media (max-width: 1250px) {
+  .reference-wrapper{
+    .quote-box{
+      .quote{
+        height: 260px;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 1200px) {
   .references-content {
     padding: 100px 0;
@@ -166,6 +177,29 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .reference-wrapper{
+    .quote-box{
+      .quote{
+        height: 320px;
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .reference-wrapper{
+    .quote-box{
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px;
+      .quote{
+        height: 320px;
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .references-content {
     padding-left: 0;
@@ -174,12 +208,6 @@
     flex-direction: column-reverse;
     align-items: end;
     padding-left: 0;
-
-    .quote-box {
-      width: 90%;
-      margin: 0 auto;
-      padding: 30px;
-    }
     .quote-icon {
       top: 300px;
       left: 0;
@@ -195,6 +223,11 @@
 
 @media (max-width: 500px) {
   .reference-wrapper {
+    .quote-box{
+      .quote{
+        height: 420px;
+      }
+    }
     .imgBox {
       .author-image {
         width: 200px;

@@ -1,11 +1,16 @@
 <IfModule mod_rewrite.c>
+  Options -Multiviews
   RewriteEngine On
   RewriteBase /
 
-  # Wenn eine Datei oder ein Verzeichnis existiert, rufe sie auf
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
+  # Falls die Datei oder der Ordner existiert, dann normale Auslieferung
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
 
-  # Ansonsten leite auf index.html um
+  # Andernfalls Weiterleitung auf index.html
   RewriteRule ^.*$ /index.html [L]
 </IfModule>
+
+# Stelle sicher, dass index.html als Startseite genommen wird
+DirectoryIndex index.html
