@@ -11,8 +11,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './references.component.scss',
 })
 export class ReferencesComponent {
-  references: any[] = [];
   currentIndex = 0;
+  references: any[] = [];
 
   constructor(private translate: TranslateService) {
     this.loadReferences();
@@ -26,13 +26,13 @@ export class ReferencesComponent {
     });
   }
 
+  next() {
+    this.currentIndex = (this.currentIndex + 1) % this.references.length;
+  }
+
   prev() {
     this.currentIndex =
       (this.currentIndex - 1 + this.references.length) % this.references.length;
-  }
-
-  next() {
-    this.currentIndex = (this.currentIndex + 1) % this.references.length;
   }
 
   goTo(index: number) {

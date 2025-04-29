@@ -20,7 +20,6 @@
     justify-content: space-between;
     position: relative;
     width: 850px;
-    height: auto;
     min-height: 272px;
     padding: 48px 96px;
     color: white;
@@ -28,6 +27,7 @@
     border-radius: 32px;
 
     .quote {
+      height: 200px;
       font-size: 20px;
       font-weight: 400;
       line-height: 1.6;
@@ -133,7 +133,7 @@
 @media (max-width: 1440px) {
   .reference-wrapper {
     position: relative;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     .imgBox {
       position: unset;
