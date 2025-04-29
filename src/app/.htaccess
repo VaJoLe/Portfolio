@@ -3,14 +3,11 @@
   RewriteEngine On
   RewriteBase /
 
-  # Falls die Datei oder der Ordner existiert, dann normale Auslieferung
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Andernfalls Weiterleitung auf index.html
   RewriteRule ^.*$ /index.html [L]
 </IfModule>
 
-# Stelle sicher, dass index.html als Startseite genommen wird
 DirectoryIndex index.html

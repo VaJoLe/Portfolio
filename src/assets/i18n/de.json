@@ -37,7 +37,7 @@
         "title": "Join",
         "techStack": "Angular | TypeScript | HTML | CSS | Firebase",
         "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-        "liveUrl": "https://join.jonas-valtin.de/index.html",
+        "liveUrl": "https://join.jonas-valtin.de",
         "githubUrl": "https://github.com/VaJoLe/join",
         "imageUrl": "assets/projects/Join.png"
       },
@@ -45,7 +45,7 @@
         "title": "El Pollo Loco",
         "techStack": "JavaScript | HTML | CSS",
         "description": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-        "liveUrl": "https://elpolloloco.jonas-valtin.de/index.html",
+        "liveUrl": "https://elpolloloco.jonas-valtin.de",
         "githubUrl": "https://github.com/VaJoLe/ElPolloLoco",
         "imageUrl": "assets/projects/ElPolloLoco.png"
       },
@@ -53,7 +53,7 @@
         "title": "Pokedex",
         "techStack": "JavaScript | HTML | CSS | API",
         "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
-        "liveUrl": "https://pokedex.jonas-valtin.de/index.html",
+        "liveUrl": "https://pokedex.jonas-valtin.de",
         "githubUrl": "https://github.com/VaJoLe/PokeDex",
         "imageUrl": "assets/projects/Pokedex.png"
       }
