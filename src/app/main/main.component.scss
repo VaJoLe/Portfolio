@@ -37,9 +37,9 @@ app-skills {
 
 .vector {
   position: absolute;
-  top: calc(100vh + 11%);
+  top: 100vh;
   width: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 app-portfolio {
@@ -82,6 +82,72 @@ app-contact {
   z-index: -1;
 }
 
+@media (max-width: 7000px) {
+  .vector {
+    top: 100vh;
+  }
+}
+
+@media (max-width: 6500px) {
+  .vector {
+    top: calc(100vh + 1%);
+  }
+}
+
+@media (max-width: 6000px) {
+  .vector {
+    top: calc(100vh + 2%);
+  }
+}
+
+@media (max-width: 5500px) {
+  .vector {
+    top: calc(100vh + 3%);
+  }
+}
+
+@media (max-width: 5000px) {
+  .vector {
+    top: calc(100vh + 4%);
+  }
+}
+
+@media (max-width: 4500px) {
+  .vector {
+    top: calc(100vh + 5%);
+  }
+}
+
+@media (max-width: 4000px) {
+  .vector {
+    top: calc(100vh + 5%);
+  }
+}
+
+@media (max-width: 3500px) {
+  .vector {
+    top: calc(100vh + 6%);
+  }
+}
+
+@media (max-width: 3000px) {
+  .vector {
+    top: calc(100vh + 7%);
+  }
+}
+
+@media (max-width: 2500px) {
+  .vector {
+    top: calc(100vh + 8%);
+  }
+}
+
+@media (max-width: 2000px) {
+  .vector {
+    top: calc(100vh + 9%);
+  }
+}
+
 @media (max-width: 1440px) {
   app-portfolio {
     padding-top: 100px;
@@ -89,13 +155,16 @@ app-contact {
   app-contact {
     padding-top: unset;
   }
+  .vector {
+    top: calc(100vh + 11%);
+  }
 }
 
 @media (max-width: 1200px) {
   .shadow-ref {
     transform: rotate(251deg) translate(-40%, 115%);
   }
-  .vector{
+  .vector {
     top: calc(100vh + 12%);
   }
 }

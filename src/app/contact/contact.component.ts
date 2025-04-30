@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -14,6 +14,19 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
   http = inject(HttpClient);
+  blurStates: Record<string, boolean> = {
+    name: false,
+    email: false,
+    message: false,
+  };
+
+  contactForm = {
+    controls: {
+      name: { invalid: false },
+      email: { invalid: false },
+      message: { invalid: false },
+    },
+  };
 
   contactData = {
     name: '',

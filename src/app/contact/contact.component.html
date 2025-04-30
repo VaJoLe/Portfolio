@@ -32,11 +32,12 @@
             required
             pattern="^[A-Za-zÀ-ÖØ-öø-ÿÄäÖöÜüß\-'\s]{2,50}$"
           />
-          @if (!name.valid && name.touched && name.value) {
-          <div class="error-message">
+          <div
+            class="error-message"
+            [class.visible]="!name.valid && name.touched && name.value"
+          >
             {{ "CONTACT.ERROR_NAME" | translate }}
           </div>
-          }
         </div>
         <div>
           <input
@@ -49,11 +50,12 @@
             required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           />
-          @if (!email.valid && email.touched && email.value) {
-          <div class="error-message">
+          <div
+            class="error-message"
+            [class.visible]="!email.valid && email.touched && email.value"
+          >
             {{ "CONTACT.ERROR_EMAIL" | translate }}
           </div>
-          }
         </div>
         <div>
           <textarea
@@ -66,11 +68,12 @@
             required
             minlength="5"
           ></textarea>
-          @if (!message.valid && message.touched && message.value) {
-          <div class="error-message">
+          <div
+            class="error-message"
+            [class.visible]="!message.valid && message.touched && message.value"
+          >
             {{ "CONTACT.ERROR_MESSAGE" | translate }}
           </div>
-          }
         </div>
         <div class="checkbox">
           <div class="checkbox-row">
@@ -90,11 +93,12 @@
               {{ "CONTACT.PRIVACY_TEXT2" | translate }}
             </label>
           </div>
-          @if (!privacy.valid && privacy.touched) {
-          <div class="error-message">
+          <div
+            class="error-message"
+            [class.visible]="!privacy.valid && privacy.touched && privacy.value"
+          >
             {{ "CONTACT.ERROR_PRIVACY" | translate }}
           </div>
-          }
         </div>
         <div class="button">
           <button type="submit" [disabled]="!contactForm.valid">
