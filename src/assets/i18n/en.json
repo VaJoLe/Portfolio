@@ -35,7 +35,7 @@
     "PROJECTS": [
       {
         "title": "Join",
-        "techStack": "Angular | TypeScript | HTML | CSS | Firebase",
+        "techStack": "JavaScript | HTML | CSS | Firebase",
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "liveUrl": "https://join.jonas-valtin.de",
         "githubUrl": "https://github.com/VaJoLe/join",
@@ -56,6 +56,14 @@
         "liveUrl": "https://pokedex.jonas-valtin.de",
         "githubUrl": "https://github.com/VaJoLe/PokeDex",
         "imageUrl": "assets/projects/Pokedex.png"
+      },
+      {
+        "title": "Simple-CRM",
+        "techStack": "Angular | TypeScript | HTML | CSS | Firebase",
+        "description": "A system for the digital management of customer contacts and appointments.",
+        "liveUrl": "https://simplecrm.jonas-valtin.de",
+        "githubUrl": "https://github.com/VaJoLe/CRM-Tool",
+        "imageUrl": "assets/projects/SimpleCRM.png"
       }
     ]
   },

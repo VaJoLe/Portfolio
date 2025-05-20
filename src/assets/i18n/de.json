@@ -56,6 +56,14 @@
         "liveUrl": "https://pokedex.jonas-valtin.de",
         "githubUrl": "https://github.com/VaJoLe/PokeDex",
         "imageUrl": "assets/projects/Pokedex.png"
+      },
+      {
+        "title": "Simple-CRM",
+        "techStack": "Angular | TypeScript | HTML | CSS | Firebase",
+        "description": "Ein System zur digitalen Verwaltung von Kundenkontakten und Terminen.",
+        "liveUrl": "https://simplecrm.jonas-valtin.de",
+        "githubUrl": "https://github.com/VaJoLe/CRM-Tool",
+        "imageUrl": "assets/projects/SimpleCRM.png"
       }
     ]
   },
