@@ -1,0 +1,272 @@
+@mixin responsive-vector(
+  $start: any,
+  $end: any,
+  $step: any,
+  $base: any,
+  $bottom-step: any
+) {
+  $i: 1;
+  @for $width from ($start + $step) through $end {
+    @if ($width % $step == 0) {
+      @media (min-width: #{$width}px) {
+        .vector {
+          bottom: calc(#{$base} + #{$i} * #{$bottom-step});
+        }
+      }
+      $i: $i + 1;
+    }
+  }
+}
+@mixin responsive-bottom-max($start, $end, $step, $base, $bottom-step) {
+  $i: 0;
+  @for $width from $start through $end {
+    $actualWidth: $start - ($i * $step);
+    @if ($actualWidth >= $end) {
+      @media (max-width: #{$actualWidth}px) {
+        .vector {
+          bottom: calc(#{$base} - #{$i} * #{$bottom-step});
+        }
+      }
+      $i: $i + 1;
+    }
+  }
+}
+
+@include responsive-vector(1440, 5000, 20, -550px, -10px);
+@include responsive-vector(5000, 8000, 30, -2320px, -15px);
+
+@include responsive-bottom-max(1400, 1300, 50, -470px, -30px);
+@include responsive-bottom-max(1300, 1101, 10, -400px, -10px);
+@include responsive-bottom-max(1101, 1000, 5, -160px, -8px);
+@include responsive-bottom-max(1000, 800, 10, 430px, -5px);
+@include responsive-bottom-max(800, 460, 10, 460px, -10px);
+@include responsive-bottom-max(460, 420, 10, 850px, -10px);
+
+:host-context(.lang-de) {
+  @include responsive-vector(1440, 5000, 20, -500px, -10px);
+  @include responsive-vector(5000, 8000, 30, -2270px, -15px);
+
+  @include responsive-bottom-max(1400, 1300, 50, -420px, -30px);
+  @include responsive-bottom-max(1300, 1101, 10, -350px, -10px);
+  @include responsive-bottom-max(1101, 1000, 5, -110px, -8px);
+
+  @include responsive-bottom-max(1000, 800, 10, 500px, -5px);
+  @include responsive-bottom-max(800, 700, 5, 530px, -6px);
+  @include responsive-bottom-max(700, 537, 5, 640px, -5px);
+  @include responsive-bottom-max(537, 480, 5, 850px, -7px);
+  @include responsive-bottom-max(480, 441, 5, 960px, -8px);
+  @include responsive-bottom-max(441, 437, 5, 1020px, -20px);
+  @include responsive-bottom-max(437, 398, 5, 1040px, -15px);
+}
+
+@media (max-width: 1440px) {
+  .shadow-pic {
+    width: 55%;
+    right: 0;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1400px) {
+  .about-content {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .left {
+    padding-top: 50px;
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    .profil-pic {
+      width: 80%;
+    }
+  }
+  .shadow-pic {
+    width: 550px;
+    height: 520px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 800px) {
+  .about-content {
+    padding: 100px 0;
+    width: 80%;
+  }
+  .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h2 {
+      line-height: 75px;
+    }
+  }
+  .right {
+    .profil-pic {
+      width: 100%;
+    }
+  }
+  .shadow-pic {
+    width: 100%;
+    max-width: 600px;
+    height: 580px;
+    top: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .left {
+    h2 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    .leftBottom {
+      height: auto;
+      gap: 10px;
+    }
+    .about-me {
+      .img {
+        width: auto;
+        height: auto;
+      }
+      p {
+        flex: 1;
+        width: auto;
+      }
+    }
+  }
+  .shadow-pic {
+    top: 0;
+  }
+}
+
+@media (max-width: 419px) {
+  .vector {
+    bottom: 960px;
+  }
+}
+
+@media (max-width: 398px) {
+  .vector {
+    bottom: 990px;
+  }
+  :host-context(.lang-de) .vector {
+    bottom: 1150px;
+  }
+}
+
+@media (max-width: 396px) {
+  :host-context(.lang-de) .vector {
+    bottom: 1180px;
+  }
+}
+
+@media (max-width: 390px) {
+  .about-content {
+    padding: 20px;
+    padding-bottom: 100px;
+    flex-direction: column-reverse;
+  }
+  .left {
+    width: 100%;
+    padding-top: 50px;
+    h2 {
+      font-size: 35px;
+      line-height: 40px;
+      padding-bottom: 15px;
+    }
+  }
+  .leftBottom {
+    height: auto;
+    width: 300px;
+    gap: 15px;
+    padding-top: 15px;
+    .about-me {
+      .img {
+        width: auto;
+        height: auto;
+      }
+      p {
+        flex: 1;
+        width: auto;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .profil-pic {
+      width: 300px;
+    }
+    .shadow-pic {
+      width: 350px;
+      height: auto;
+      top: 50px;
+    }
+  }
+  .vector {
+    bottom: 1050px;
+  }
+  :host-context(.lang-de) .vector {
+    bottom: 1320px;
+  }
+}
+
+@media (max-width: 379px) {
+  .vector {
+    bottom: 1090px;
+  }
+}
+
+@media (max-width: 378px) {
+  :host-context(.lang-de) .vector {
+    bottom: 1350px;
+  }
+}
+
+@media (max-width: 364px) {
+  .vector {
+    bottom: 1120px;
+  }
+}
+
+@media (max-width: 359px) {
+  :host-context(.lang-de) .vector {
+    bottom: 1380px;
+  }
+}
+
+@media (max-width: 350px) {
+  :host-context(.lang-de) .vector {
+    bottom: 1410px;
+  }
+}
+
+@media (max-width: 348px) {
+  .vector {
+    bottom: 1150px;
+  }
+}
+
+@include responsive-bottom-max(346, 320, 5, 1165px, -5px);
+
+:host-context(.lang-de) {
+  @include responsive-bottom-max(341, 320, 2, 1430px, -5px);
+}
