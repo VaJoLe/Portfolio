@@ -18,18 +18,23 @@
 
 .skillIconBox {
   width: 90px;
-  height: 130px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  img {
-    height: 60px;
-    object-fit: cover;
-    transition: all 1.25s ease-in;
-    &:hover {
-      animation: jumpUp 1.25s ease-out;
+  .icon{
+    height: 95px;
+    display: flex;
+    align-items: end;
+    img {
+      height: 60px;
+      object-fit: cover;
+      transition: all 1.25s ease-in;
+      &:hover {
+        animation: jumpUp 1.25s ease-out;
+      }
     }
   }
   p {
@@ -220,9 +225,12 @@
     width: 90%;
     .skillIconBox {
       width: 90px;
-      height: 120px;
-      img {
-        height: 50px;
+
+      .icon{
+        height: 70px;
+        img {
+          height: 50px;
+        }
       }
       p {
         font-size: 16px;
@@ -251,9 +259,14 @@
 
     .skillIconBox {
       width: 80px;
-      height: 100px;
-      img {
-        height: 40px;
+      .icon{
+        height: 60px;
+        img {
+          height: 40px;
+        }
+        img {
+          height: 40px;
+        }
       }
       p {
         font-size: 14px;

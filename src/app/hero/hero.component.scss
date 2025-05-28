@@ -324,6 +324,12 @@ button {
   }
 }
 
+@media (max-width: 434px) {
+  :host-context(.lang-de) button {
+    height: auto;
+  }
+}
+
 @media (max-width: 390px) {
   .hero-content {
     height: 80px;
@@ -377,5 +383,8 @@ button {
     height: 400px;
     top: 150px;
     transform: translateX(135%);
+  }
+  :host-context(.lang-de) button {
+    height: 49px;
   }
 }

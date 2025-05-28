@@ -2,7 +2,9 @@
 <div class="skills-content">
   <div class="skillsIcons">
     <div class="skillIconBox" *ngFor="let item of imageList">
-      <img [src]="item.image" [alt]="item.title" />
+      <div class="icon">
+        <img [src]="item.image" [alt]="item.title" />
+      </div>
       <p>
         {{
           item.title === "LEARNING"

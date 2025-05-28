@@ -24,6 +24,16 @@ export class HeaderComponent {
     });
   }
 
+  ngAfterViewInit(): void {
+  const menuToggle = document.querySelector('.menu-toggle');
+  if (menuToggle) {
+    menuToggle.addEventListener('touchstart', () => {
+      this.toggleMobileMenu();
+    });
+  }
+}
+
+
   setLanguage(lang: 'en' | 'de') {
     if (this.activeLanguage !== lang) {
       this.translate.use(lang);
